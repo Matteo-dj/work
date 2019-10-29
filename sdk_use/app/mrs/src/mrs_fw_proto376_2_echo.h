@@ -604,7 +604,6 @@ hi_void mrs_plc_detect_id_timeout(hi_void);
 
 uintptr_t mrs_get_read_id_frame(hi_void);
 hi_void mrs_free_read_id_frame(hi_void);
-HI_VOID mrsMaintainTopoInfo(HI_VOID);
 HI_U32 mrs3762_ReportAFN20_F4(HI_VOID);
 HI_END_HEADER
 #endif //__MRS_PROTO376_2_ECHO_H__

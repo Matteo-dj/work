@@ -846,8 +846,6 @@ HI_U32 mrsRf645_1FH_CI10(HI_VOID *param, HI_VOID **ppOutParam, HI_U16 *pOutParam
 	 {
 	 	pcTemp[usOffset+i]=pucPayload[i];
 	 }
-	 //Matteo
-	 HI_DIAG_LOG_MSG_E0(MRS_FILE_LOG_FLAG_055, HI_DIAG_MT("[Matteo] wireless sta send"));
 	ret =mrsRfAssembleFrame(ppOutParam, pOutParamLen, pcTemp, usPayloadLen+usOffset, 
 								(MRS_RF_645_FRAME_STRU*)param, ucPreSize);
 

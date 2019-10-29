@@ -1548,12 +1548,11 @@ HI_U32 mrs3762_AFN10_F100(HI_INOUT HI_VOID * param)
 HI_U16 mrsGetCurrTopoNum(HI_VOID)
 {
     MRS_CCO_SRV_CTX_STRU * pstCcoCtx = mrsCcoGetContext();
-    //HI_MAC_CONFIG_INFO_S stMacInfo = {0};
+    HI_MAC_CONFIG_INFO_S stMacInfo = {0};
     HI_U16 usTopoNum = 0;
 
-	mrsMaintainTopoInfo();
-    //stMacInfo.pTopo = pstCcoCtx->pTopoIntegerInfo;
-    //HI_MDM_QueryInfo(&stMacInfo);  // 读取mac拓扑表信息
+    stMacInfo.pTopo = pstCcoCtx->pTopoIntegerInfo;
+    HI_MDM_QueryInfo(&stMacInfo);  // 读取mac拓扑表信息
     usTopoNum = (HI_U16)((HI_MAC_NETWORK_TOPO_S*)pstCcoCtx->pTopoIntegerInfo)->num;
 
     return usTopoNum;
@@ -2926,9 +2925,8 @@ HI_U32 mrsQueryTopoDownCheck(AFN_FN_UL_PARAM *pstAfnParam, HI_U16 *pusStartSeq, 
 
             if (ucFrom & MRS_CCO_QUERY_TOPO_INFO)
             {
-            	mrsMaintainTopoInfo();
-                //mac_inf.pTopo = pstCcoCtx->pTopoIntegerInfo;
-                //ret = HI_MDM_QueryInfo(&mac_inf);  // 读取mac拓扑表信息
+                mac_inf.pTopo = pstCcoCtx->pTopoIntegerInfo;
+                ret = HI_MDM_QueryInfo(&mac_inf);  // 读取mac拓扑表信息
             }
         }
 
@@ -3016,14 +3014,12 @@ HI_U32 mrsSetTopoQueryBuf(HI_U8* pData, HI_U8 ucQueryNum, HI_U16 usStartSeq, HI_
             break;
         }
 //#if defined(PRODUCT_CFG_JIANGXI) || defined(PRODUCT_CFG_NINGXIA) || defined(PRODUCT_CFG_JIBEI)
-		/*
 		if (1 == usIndex)
         {
             (hi_void)memcpy_s(pAddr, sizeof(pAddr), pstCcoCtx->ucMainNodeAddr, sizeof(pAddr));
 			mrsHexInvert(pAddr, sizeof(pAddr));
         }
 		else
-		*/
 //#endif
 		{
 	        (hi_void)memcpy_s(pAddr, sizeof(pAddr), pstTopoInf->entry[usIndex-1].mac, HI_PLC_MAC_ADDR_LEN);
@@ -3302,7 +3298,6 @@ HI_U32 mrsSetQueryInfoBuf(HI_U8* pData, HI_U8 ucQueryNum, HI_U16 usStartSeq, HI_
             break;
         }
 //	HI_DIAG_LOG_BUF(MRS_FILE_LOG_BUF_1003, HI_DIAG_MT("topo entry i"), &(pstTopoInf->entry[usIndex-1]), sizeof(HI_MAC_NETWORK_TOPO_ENTRY_S));
-		/*
 		if (1 == usIndex)
         {
             (hi_void)memcpy_s(pAddr, sizeof(pAddr), pstCcoCtx->ucMainNodeAddr, sizeof(pAddr));
@@ -3314,7 +3309,6 @@ HI_U32 mrsSetQueryInfoBuf(HI_U8* pData, HI_U8 ucQueryNum, HI_U16 usStartSeq, HI_
         	mrsHexInvert(pAddr, sizeof(pAddr));
         	MRS_TOOLS_FE_TO_00(pAddr[0]);
 		}
-	*/
         (hi_void)memcpy_s(pData + usOffset, HI_PLC_MAC_ADDR_LEN, pAddr, HI_PLC_MAC_ADDR_LEN);
         usOffset += HI_PLC_MAC_ADDR_LEN;
 
@@ -6149,41 +6143,6 @@ HI_U32 mrs3762_AFNF1_F1(HI_INOUT HI_VOID * param)
 
     return HI_ERR_SUCCESS;
 }
-
-
-HI_VOID mrsMaintainTopoInfo(HI_VOID)
-{
-    HI_MAC_CONFIG_INFO_S mac_inf = {0};
-    MRS_CCO_SRV_CTX_STRU * pstCcoCtx = mrsCcoGetContext();
-	HI_MAC_NETWORK_TOPO_S *pstTopoInfOld = HI_NULL, *pstTopoInfNew = HI_NULL;
-	mac_inf.pTopo = &pstCcoCtx->stTempTopoInf;
-	pstTopoInfOld = (HI_MAC_NETWORK_TOPO_S *)pstCcoCtx->pTopoIntegerInfo;
-	pstTopoInfNew = &pstCcoCtx->stTempTopoInf;
-    if (HI_ERR_SUCCESS != HI_MDM_QueryInfo(&mac_inf))  // 读取mac拓扑表信息
-    {
-		return;
-    }
-	for (HI_U16 i = 0; i < pstTopoInfNew->num; i++)
-	{
-		if (MRS_PHASE_INVALID == mrsGetPhaseFromTopo(pstTopoInfNew->entry[i].phase_state ,pstTopoInfNew->entry[i].phase_result))//未知相线，采用上次记录的相线信息
-		{
-			for(HI_U16 j = 0; j < pstTopoInfOld->num; j++)
-			{
-				if(memcmp(pstTopoInfNew->entry[i].mac, pstTopoInfOld->entry[j].mac,HI_PLC_MAC_ADDR_LEN) == 0)
-				{
-					pstTopoInfNew->entry[i].phase_state = pstTopoInfOld->entry[j].phase_state;
-					pstTopoInfNew->entry[i].phase_result = pstTopoInfOld->entry[j].phase_result;
-					break;
-				}
-			}
-		}
-	}
-	(hi_void)memset_s(pstTopoInfOld, sizeof(HI_MAC_NETWORK_TOPO_S),0, sizeof(HI_MAC_NETWORK_TOPO_S));
-	(hi_void)memcpy_s(pstTopoInfOld, sizeof(HI_MAC_NETWORK_TOPO_S), pstTopoInfNew, sizeof(HI_MAC_NETWORK_TOPO_S));
-}
-
-
-
 //AFN20 F1：启动抄收水表数据命令
 HI_U32 mrs3762_AFN20_F1(HI_INOUT HI_VOID * param)
 {

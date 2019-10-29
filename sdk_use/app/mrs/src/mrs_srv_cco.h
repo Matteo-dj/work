@@ -586,7 +586,6 @@ typedef struct
 	HI_MAC_NETWORK_MODULE_ID_S* pstTempModuleIdInf;//临时模块ID信息，目前用于维护pstModualIdInf
 #endif
     HI_MDM_NETWORK_STA_ID_S *pstStaIdInfo; //一份完整节点ID信息，目前用于AFN=10-F33
-    HI_MAC_NETWORK_TOPO_S stTempTopoInf;       //临时拓扑信息，目前用于维护pTopoIntegerInfo
 	MR_CCO_NDM_PLC_INFO_STRU stCcoNdmPlcInfo; //抄控器下发ccoplc时的报文信息
     MR_CCO_NDM_PLC_BUSY_STRU stCcoNdmPlcBusyInfo; //有抄控器下发plc帧点抄引起的忙返回信息记录
     HI_U8 LowPowerMeterLastNum;//Matteo
