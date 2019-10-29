@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<DeviceInfo>
+  <DeviceReg>
+      <PCUI>
+          <element name="HUAWEI Mobile Connect - 3G PC UI Interface"/>
+          <element name="HUAWEI Mobile Connect - PC UI Interface"/>
+          <element name="Vodafone Mobile Broadband Secondary Port Modem (Huawei)"/>
+          <element name="Mobile Connect - PC UI Interface"/>
+          <element name="HUAWEIMobile-Pcui"/>
+          <element name="ttyUSB_utps_pcui"/>
+      </PCUI>
+      <Diag>
+          <element name="HUAWEI Mobile Connect - 3G Application Interface"/>
+          <element name="HUAWEI Mobile Connect - Application Interface"/>
+          <element name="Vodafone Mobile Broadband Diagnostics Port (Huawei)"/>
+          <element name="Mobile Connect - Application Interface"/>
+          <element name="HUAWEIMobile-Diag"/>
+          <element name="ttyUSB_utps_diag"/>
+      </Diag>
+      <Modem/>
+    </DeviceReg>
+</DeviceInfo>

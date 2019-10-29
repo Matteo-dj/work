@@ -1,0 +1,4 @@
+ACORE_NAME       = ndm
+MCORE_NAME       = cco
+BOOTROM_NAME     = sta
+BOOTLOADER_NAME  = boot

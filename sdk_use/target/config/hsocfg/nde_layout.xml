@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HISTUDIO>
+  <!--Huawei Technologies Co.,Ltd.-->
+  <!--HiStudio Memory Stat. Plugin cnofiguration file.-->
+  <!--shenhankun 20081020-->
+  <!--V1.0-->
+  <BASIC>
+    <TABLE CMD_ID="st1=0x0113;st2=0x0161;st3=0x0173;st4=0x011a;st5=0x0172" MODE="0" TYPE="1" POS="0,0" CELL_TITLE_NAMES="CellID;RSRP(dBm);RSSI(dBm)" CELL_INDEX_NAMES="TYPE;Value" INVALID_VALUE="st5:0xFF=-99999,0xFFFF=-99999,0xFFFFFFFF=-99999">
+      <CELL NAME="CellID" EDIT="1" DATA_MAP="st1:usCellID" POS="0,1" DISPLAY="1" PRECISION="0"></CELL>
+      <CELL NAME="RSRP" DATA_MAP="st1:stMeasInfo.sRsrp" POS="1,1" DISPLAY="1" PRECISION="0"></CELL>
+      <CELL NAME="VelocityFlag" DATA_MAP="st2:usCorrCoef" POS="13,1" DISPLAY="1" PRECISION="0"></CELL>
+    </TABLE>
+  </BASIC>
+  <LAYOUT>
+    <TEI>0</TEI>
+    <MAC>00:00:00:00:B0:C0</MAC>
+    <TIME>0:6:80</TIME>
+    <TABLE CMD_ID="st1=0x0113;st2=0x0161;st3=0x0173;st4=0x011a;st5=0x0172" MODE="0" TYPE="1" POS="0,0" CELL_TITLE_NAMES="CellID;RSRP(dBm);RSSI(dBm)" CELL_INDEX_NAMES="TYPE;Value" INVALID_VALUE="st5:0xFF=-99999,0xFFFF=-99999,0xFFFFFFFF=-99999">
+      <CELL NAME="CellID" EDIT="1" DATA_MAP="st1:usCellID" POS="0,1" DISPLAY="1" PRECISION="0"></CELL>
+      <CELL NAME="RSRP" DATA_MAP="st1:stMeasInfo.sRsrp" POS="1,1" DISPLAY="1" PRECISION="0"></CELL>
+      <CELL NAME="VelocityFlag" DATA_MAP="st2:usCorrCoef" POS="13,1" DISPLAY="1" PRECISION="0"></CELL>
+    </TABLE>
+    <TABLE CMD_ID="st1=0x0113;st2=0x0161;st3=0x0173;st4=0x011a;st5=0x0172" MODE="0" TYPE="1" POS="0,1" CELL_TITLE_NAMES="CellID;RSRP(dBm);RSSI(dBm)" CELL_INDEX_NAMES="TYPE;Value" INVALID_VALUE="st5:0xFF=-99999,0xFFFF=-99999,0xFFFFFFFF=-99999">
+      <CELL NAME="CellID" EDIT="1" DATA_MAP="st1:usCellID" POS="0,1" DISPLAY="1" PRECISION="0"></CELL>
+      <CELL NAME="RSRP" DATA_MAP="st1:stMeasInfo.sRsrp" POS="1,1" DISPLAY="1" PRECISION="0"></CELL>
+      <CELL NAME="VelocityFlag" DATA_MAP="st2:usCorrCoef" POS="13,1" DISPLAY="1" PRECISION="0"></CELL>
+    </TABLE>
+  </LAYOUT>
+</HISTUDIO>

@@ -1,0 +1,6 @@
+CHIP_NAME      = Hi3911 
+VERSION        = V200R001C00B013
+FILE_VER       = 1.190.0 
+NV_VER         = cih518@AMR 
+BOOTLOADRE_VER = 0.0.46 
+

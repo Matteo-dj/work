@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HISTUDIO>
+  <!--The HiStudio Diagnostic Preferences Settings.-->
+  <!--Copyright 1998 - 2009, Huawei Tech. Co., Ltd. ALL RIGHTS RESERVED-->
+  <!--沈汉坤 shenhankun 00130424-->
+  <!--V1.0-->
+  <SESSIONS CURRENT_ID="0x1">
+    <SESSION ID="0x1">
+      <GENERAL>
+        <CRASH NAME="" />
+        <WINDOW TITLE="PLC" FULL_SCREEN="0" />
+        <SKIN OFFICE2007="0" NT="0" />
+        <MENU STYPE="Ribbon" />
+        <FILE_ASSOCIATION NAME=".hcs" />
+        <FILE_ASSOCIATION NAME=".hli" />
+        <LOG DIR="C:\" FILE_NAME="diagnostic.log" MaxLimit="100" MinLimit="0" />
+        <UPDATE CHECK="Never " NT="0" />
+        <STATUS_BAR HIDE_AT_DBG="1" />
+        <AT_TOOLBAR HIDE="1" />
+      </GENERAL>
+      <VIEW>
+        <POPULAR>
+          <VIEW PLUGIN_ID="" VIEW_ID="" TITLE="" DESCRIPTION="" ACTIVE="" VALID="" />
+        </POPULAR>
+        <HISTORY ACTIVE_VIEW="1" ACTIVE_PID="256" ACTIVE_TID="1">
+          <VIEW ORDER="0" PLUGINID="256" INSTANCEID="1" ACTIVE="1" />
+          <VIEW ORDER="1" PLUGINID="273" INSTANCEID="1" ACTIVE="1" />
+        </HISTORY>
+        <FAVORITE />
+        <HISTORY />
+      </VIEW>
+      <RECENT_FILE />
+      <PLUGIN>
+        <DIR>
+          <NAME>plugin</NAME>
+        </DIR>
+        <SETTING>
+          <AUTO_LOAD>1</AUTO_LOAD>
+          <SCAN_NEW_PLUGIN>1</SCAN_NEW_PLUGIN>
+        </SETTING>
+        <PLUGIN>
+          <FILE>logging.dll</FILE>
+          <TITLE>logging</TITLE>
+          <DESCRIPTION />
+          <ENABLE>1</ENABLE>
+        </PLUGIN>
+        <PLUGIN>
+          <FILE>print.dll</FILE>
+          <TITLE>Print Viewer</TITLE>
+          <DESCRIPTION />
+          <ENABLE>1</ENABLE>
+        </PLUGIN>
+      </PLUGIN>
+      <STATUS DEVCIE_STATUS="logs" START_DATE="diagnostic.log" START_TIME="diagnostic.log" DURATION="diagnostic.log" SPEED="0" ENDIAN_BE="0">
+        <!--Status Bar-->
+      </STATUS>
+      <DEVICE>
+        <SETTING TYPE="COM">
+          <!--TYPE:ETH=ethernet card; ETHR=Router; USB: USB Device; ETHU: Ethernet and USB; ETHC: Ethernet and COM; COM: Serial or USB Virtual COM-->
+        </SETTING>
+        <DEV ID="0" INDEX="0" IP_LIST_INDEX="0" CMD_LINE="route print" NAME="Ethernet card" TYPE="ETH" ROUTER="0" AUTO_CONNECT="0" UE_SLEEP_MODE_SUPPORT="0" CONNECT_TIME_OUT="2000" DIAG_TIME_OUT="5000">
+          <IP ADDR="127.0.0.1" TYPE="DA">
+            <!--TYPE: DA=Destination IP Address; GA=Gateway IP Address;-->
+          </IP>
+          <IP ADDR="" TYPE="DCM">
+            <!--TYPE: DA=Destination IP Address; GA=Gateway IP Address;-->
+          </IP>
+          <IP ADDR="192.168.255.2" TYPE="GA">
+            <!--TYPE: DA=Destination IP Address; GA=Gateway IP Address;-->
+          </IP>
+          <MAC ADDR="" TYPE="SA">
+            <!--Source MAC Address-->
+          </MAC>
+          <MAC ADDR="00-00-00-00-00-00" TYPE="WAN">
+            <!--WAN MAC Address-->
+          </MAC>
+          <MAC ADDR="00-1a-2b-3c-4d-5e" TYPE="DA">
+            <!--UE MAC Address-->
+          </MAC>
+          <PORT PORT="30000" CATEGORY="DIAG_CMD" TYPE="TCP" />
+          <PORT PORT="0" CATEGORY="DIAG_IND" TYPE="UDP" />
+          <PORT PORT="20249" CATEGORY="AT_CMD" TYPE="TCP" />
+          <!--TYPE:ETH=ethernet card; RTR=Router;COM:Serial Comm; USB: USB Device-->
+        </DEV>
+        <DEV ID="2" NAME="" TYPE="COM" IP="" AUTO_CONNECT="1" UE_SLEEP_MODE_SUPPORT="1" DIAG_TIME_OUT="3">
+          <DIAG_PORT PORT="COM1" CATEGORY="DIAG" TYPE="RTR" />
+          <PORT PORT="-" CATEGORY="DIAG" TYPE="RTR" HIDE="1" />
+          <!--TYPE:ETH=ethernet card; RTR=Router;COM:Serial Comm; USB: USB Device-->
+        </DEV>
+        <DEV ID="2" NAME="" TYPE="USB" IP="" AUTO_CONNECT="1" UE_SLEEP_MODE_SUPPORT="1" DIAG_TIME_OUT="3">
+          <PORT PORT="-" CATEGORY="DIAG" TYPE="RTR" />
+          <PORT PORT="-" CATEGORY="DIAG" TYPE="RTR" />
+          <!--TYPE:ETH=ethernet card; RTR=Router;COM:Serial Comm; USB: USB Device-->
+        </DEV>
+      </DEVICE>
+      <SYSTEM_LANGUAGE LANGUAGE="ENGLISH">
+      </SYSTEM_LANGUAGE>
+      <SYSTEM_MEMU>
+        <MENUITEM PLUGINID="0x100" INSTANCEID="1" TITLE="Command Line Viewer" DESCRIPTION="Show Command Line Viewer(DCL)" ICONID="3" SHOW_ON_TOPMENU_NAME="&amp;Diagnostic" SHOW_ON_TOOLBAR="1" SHOW_ON_MENU_TYPE="1" AUTO_STARTUP="0" />
+        <MENUITEM PLUGINID="0x102" INSTANCEID="1" TITLE="Command Viewer" DESCRIPTION="Show Command Viewer(CG)" SHOW_ON_TOPMENU_NAME="&amp;Diagnostic" ICONID="4" SHOW_ON_TOOLBAR="1" AUTO_STARTUP="0" />
+        <MENUITEM PLUGINID="0x111" INSTANCEID="1" TITLE="Stat. GUI Viewer" DESCRIPTION="Show Stat. GUI Viewer(SG)" SHOW_ON_TOPMENU_NAME="&amp;Diagnostic" ICONID="30" SHOW_ON_TOOLBAR="1" AUTO_STARTUP="0" />
+        <MENUITEM PLUGINID="0x110" INSTANCEID="1" TITLE="Message" DESCRIPTION="Show Message Viewer" SHOW_ON_TOPMENU_NAME="&amp;Diagnostic" ICONID="6" SHOW_ON_TOOLBAR="1" AUTO_STARTUP="0" />
+        <MENUITEM PLUGINID="0x110" INSTANCEID="4" TITLE="Event" DESCRIPTION="Show Event" SHOW_ON_TOPMENU_NAME="&amp;Diagnostic" ICONID="8" SHOW_ON_TOOLBAR="1" AUTO_STARTUP="0" />
+        <MENUITEM PLUGINID="0x110" INSTANCEID="3" TITLE="Print Viewer" SHOW_ON_TOPMENU_NAME="&amp;Diagnostic" DESCRIPTION="Show Print Viewer" ICONID="9" SHOW_ON_TOOLBAR="1" AUTO_STARTUP="0" />
+        <MENUITEM PLUGINID="0x121" INSTANCEID="1" TITLE="NV Browser" DESCRIPTION="Show NV Browser" SHOW_ON_TOPMENU_NAME="&amp;Factory" ICONID="11" SHOW_ON_TOOLBAR="1" AUTO_STARTUP="0" />
+        <MENUITEM PLUGINID="0x250" INSTANCEID="1" TITLE="CSIM" ICONID="13" DESCRIPTION="Show PLC Concentrator Simulator" SHOW_ON_TOOLBAR="1" SHOW_ON_TOPMENU_NAME="Simulator" AUTO_STARTUP="0" />
+        <MENUITEM PLUGINID="0x251" INSTANCEID="1" TITLE="MSIM" ICONID="5" DESCRIPTION="Show PLC Meter Simulator" SHOW_ON_TOOLBAR="1" SHOW_ON_TOPMENU_NAME="Simulator" AUTO_STARTUP="0" />
+        <MENUITEM PLUGINID="0x252" INSTANCEID="1" TITLE="网管" ICONID="12" DESCRIPTION="Show Network Device Manager" SHOW_ON_TOOLBAR="1" SHOW_ON_TOPMENU_NAME="&amp;Network" AUTO_STARTUP="0" />
+        <MENUITEM PLUGINID="0x200" INSTANCEID="1" TITLE="GTR Adapter" ICONID="28" DESCRIPTION="Show GTR Adapter for GTR Test Automation" SHOW_ON_TOOLBAR="1" SHOW_ON_TOPMENU_NAME="T&amp;est" AUTO_STARTUP="0" />
+        <MENUITEM PLUGINID="0x301" INSTANCEID="1" TITLE="STA工装" ICONID="28" DESCRIPTION="打开STA工装" SHOW_ON_TOOLBAR="1" SHOW_ON_TOPMENU_NAME="EQT" AUTO_STARTUP="0" />
+        <MENUITEM PLUGINID="0x302" INSTANCEID="1" TITLE="非STA工装" ICONID="28" DESCRIPTION="打开非STA工装" SHOW_ON_TOOLBAR="1" SHOW_ON_TOPMENU_NAME="EQT" AUTO_STARTUP="0" />
+        <MENUITEM PLUGINID="0x303" INSTANCEID="1" TITLE="二采工装" ICONID="28" DESCRIPTION="打开二采工装" SHOW_ON_TOOLBAR="1" SHOW_ON_TOPMENU_NAME="EQT" AUTO_STARTUP="0" />
+      </SYSTEM_MEMU>
+      <COMMAND_MENU>
+        <MENUITEM_dummy CMD_ID="0x1014" CMD_PARAM="{0x7f000001,0x69,0x7f000001,0x67,0x14,0xbd1,0xc0,0xf201,0x0,0x0,0x1015}" NAME="LTE Start" ICONID="17" SHOW_ON_TOOLBAR="1" DESCRIPTION="Send LTE Start Command to UE" />
+        <MENUITEM_dummy CMD_ID="0x1015" CMD_PARAM="{0x7f000001,0x69,0x7f000001,0x67,0x14,0xbd2,0xc0,0xf201,0x0,0x0,0x1015}" NAME="LTE Stop" ICONID="18" SHOW_ON_TOOLBAR="1" DESCRIPTION="Send LTE Stop Command to UE" />
+      </COMMAND_MENU>
+    </SESSION>
+    <SESSION ID="0x2">
+      <MDI_TAB_FLAG SHOW_MDI_TAB="2"/>
+      <RECENT_FILE />
+    </SESSION>
+  </SESSIONS>
+</HISTUDIO>

@@ -1,0 +1,184 @@
+diff -Naru old/gcc/config/arm/t-linux-hisi new/gcc/config/arm/t-linux-hisi
+--- old/gcc/config/arm/t-linux-hisi	1970-01-01 08:00:00.000000000 +0800
++++ new/gcc/config/arm/t-linux-hisi	2015-09-01 10:19:09.018810183 +0800
+@@ -0,0 +1,103 @@
++# We build 20 multilibs:
++#  ./         (default)
++#  armv5te_arm9_softfp_vfp/    	        -mcpu=arm926ej-s -mfloat-abi=softfp -mfpu=vfp 
++#  armv5te_arm9_soft/	    		-mcpu=arm926ej-s -mfloat-abi=soft 
++#  armv7a_a9_soft/  	          	-mcpu=cortex-a9 -mfloat-abi=soft 
++#  armv7a_a9_vfp/	             	-mcpu=cortex-a9 -mfloat-abi=softfp -mfpu=vfp 
++#  armv7a_a9_vfp_v3d16/		       	-mcpu=cortex-a9 -mfloat-abi=softfp -mfpu=vfpv3-d16 
++#  armv7a_a9_vfpv4/  	          	-mcpu=cortex-a9 -mfloat-abi=soft -mfpu=vfpv4
++#  armv7a_a9_vfp_neonv4/	       	-mcpu=cortex-a9 -mfloat-abi=softfp -mfpu=neon-vfpv4
++#  armv7a_a9_hard_neonv4/	       	-mcpu=cortex-a9 -mfloat-abi=hard -mfpu=neon-vfpv4
++#  armv7a_a7_soft/  	          	-mcpu=cortex-a7 -mfloat-abi=soft 
++#  armv7a_a7_vfpv4/  	          	-mcpu=cortex-a7 -mfloat-abi=soft -mfpu=vfpv4
++#  armv7a_a7_vfp_neonv4/	       	-mcpu=cortex-a7 -mfloat-abi=softfp -mfpu=neon-vfpv4
++#  armv7a_a7_hard_neonv4/	       	-mcpu=cortex-a7 -mfloat-abi=hard -mfpu=neon-vfpv4
++#  armv7a_a17_soft/  	          	-mcpu=cortex-a17 -mfloat-abi=soft 
++#  armv7a_a17_soft/  	          	-mcpu=cortex-a17 -mfloat-abi=soft -mfpu=vfpv4
++#  armv7a_a17_vfp_neonv4/	       	-mcpu=cortex-a17 -mfloat-abi=softfp -mfpu=neon-vfpv4
++#  armv7a_a17_hard_neonv4/	       	-mcpu=cortex-a17 -mfloat-abi=hard -mfpu=neon-vfpv4
++#  armv7a_a17_a7_soft/  	        -mcpu=cortex-a17.cortex-a7 -mfloat-abi=soft 
++#  armv7a_a17_a7_soft/  	        -mcpu=cortex-a17.cortex-a7 -mfloat-abi=soft -mfpu=vfpv4
++#  armv7a_a17_a7_vfp_neonv4/	       	-mcpu=cortex-a17.cortex-a7 -mfloat-abi=softfp -mfpu=neon-vfpv4
++#  armv7a_a17_a7_hard_neonv4/	       	-mcpu=cortex-a17.cortex-a7 -mfloat-abi=hard -mfpu=neon-vfpv4
++
++MULTILIB_OPTIONS      = mcpu=arm926ej-s/mcpu=cortex-a9/mcpu=cortex-a7/mcpu=cortex-a17/mcpu=cortex-a17.cortex-a7
++MULTILIB_OPTIONS      += mfloat-abi=soft/mfloat-abi=softfp/mfloat-abi=hard
++MULTILIB_OPTIONS      += mfpu=vfp/mfpu=vfpv3-d16/mfpu=vfpv4/mfpu=neon-vfpv4
++
++MULTILIB_DIRNAMES     = arm9 a9 a7 a17 a17_a7
++MULTILIB_DIRNAMES     += soft softfp hard
++MULTILIB_DIRNAMES     += vfp vfpv3-d16 vfpv4 neon-vfpv4
++
++MULTILIB_EXCEPTIONS   =
++# Only want CPUs in top-directories
++MULTILIB_EXCEPTIONS   += mfloat-abi=*
++MULTILIB_EXCEPTIONS   += mfpu=*
++
++# Only want float-abi in second level
++MULTILIB_EXCEPTIONS   += mcpu=arm926ej-s/mfpu=*
++MULTILIB_EXCEPTIONS   += mcpu=cortex-a9/mfpu=*
++MULTILIB_EXCEPTIONS   += mcpu=cortex-a7/mfpu=*
++MULTILIB_EXCEPTIONS   += mcpu=cortex-a17/mfpu=*
++MULTILIB_EXCEPTIONS   += mcpu=cortex-a17.cortex-a7/mfpu=*
++
++# Never want plain softfp or hard builds without an FPU specified
++MULTILIB_EXCEPTIONS   += */mfloat-abi=softfp
++MULTILIB_EXCEPTIONS   += */mfloat-abi=hard
++
++# Never want an FPU specified with a float-abi
++MULTILIB_EXCEPTIONS   += */mfloat-abi=soft/mfpu=*
++
++# ARM926EJ-S want soft and softfp/vfp
++MULTILIB_EXCEPTIONS   += mcpu=arm926ej-s/mfloat-abi=hard/*
++MULTILIB_EXCEPTIONS   += mcpu=arm926ej-s/mfloat-abi=softfp/mfpu=vfpv3-d16
++MULTILIB_EXCEPTIONS   += mcpu=arm926ej-s/mfloat-abi=softfp/mfpu=vfpv4
++MULTILIB_EXCEPTIONS   += mcpu=arm926ej-s/mfloat-abi=softfp/mfpu=neon-vfpv4
++
++# Cortex-A9 want soft, softfp+hard for neon-vfpv4, and softfp/vfp+vfpv3-d16
++MULTILIB_EXCEPTIONS   += mcpu=cortex-a9/mfloat-abi=hard/mfpu=vfp
++MULTILIB_EXCEPTIONS   += mcpu=cortex-a9/mfloat-abi=hard/mfpu=vfpv3-d16
++MULTILIB_EXCEPTIONS   += mcpu=cortex-a9/mfloat-abi=hard/mfpu=vfpv4
++
++# Cortex-A7 want soft, softfp+hard for neon-vfpv4
++MULTILIB_EXCEPTIONS   += mcpu=cortex-a7/*/mfpu=vfp
++MULTILIB_EXCEPTIONS   += mcpu=cortex-a7/*/mfpu=vfpv3-d16
++MULTILIB_EXCEPTIONS   += mcpu=cortex-a7/mfloat-abi=hard/mfpu=vfpv4
++
++# Cortex-a17 want soft, softfp+hard for neon-vfpv4
++MULTILIB_EXCEPTIONS   += mcpu=cortex-a17/*/mfpu=vfp
++MULTILIB_EXCEPTIONS   += mcpu=cortex-a17/*/mfpu=vfpv3-d16
++MULTILIB_EXCEPTIONS   += mcpu=cortex-a17/mfloat-abi=hard/mfpu=vfpv4
++
++# cortex-a17.cortex-a7 want soft, softfp+hard for neon-vfpv4
++MULTILIB_EXCEPTIONS   += mcpu=cortex-a17.cortex-a7/*/mfpu=vfp
++MULTILIB_EXCEPTIONS   += mcpu=cortex-a17.cortex-a7/*/mfpu=vfpv3-d16
++MULTILIB_EXCEPTIONS   += mcpu=cortex-a17.cortex-a7/mfloat-abi=hard/mfpu=vfpv4
++
++# As of at least 4.2, gcc passes the wrong -L options if some multilibs are
++# omitted from MULTILIB_OSDIRNAMES
++MULTILIB_OSDIRNAMES   =   mcpu.arm926ej-s=!armv5te_arm9
++MULTILIB_OSDIRNAMES   +=  mcpu.arm926ej-s/mfloat-abi.soft=!armv5te_arm9_soft
++MULTILIB_OSDIRNAMES   +=  mcpu.arm926ej-s/mfloat-abi.softfp/mfpu.vfp=!armv5te_arm9_vfp
++MULTILIB_OSDIRNAMES   +=  mcpu.cortex-a9=!a9
++MULTILIB_OSDIRNAMES   +=  mcpu.cortex-a9/mfloat-abi.soft=!a9_soft
++MULTILIB_OSDIRNAMES   +=  mcpu.cortex-a9/mfloat-abi.softfp/mfpu.vfp=!a9_softfp_vfp
++MULTILIB_OSDIRNAMES   +=  mcpu.cortex-a9/mfloat-abi.softfp/mfpu.vfpv3-d16=!a9_softfp_vfpv3-d16
++MULTILIB_OSDIRNAMES   +=  mcpu.cortex-a9/mfloat-abi.softfp/mfpu.vfpv4=!a9_softfp_vfpv4
++MULTILIB_OSDIRNAMES   +=  mcpu.cortex-a9/mfloat-abi.softfp/mfpu.neon-vfpv4=!a9_softfp_neon-vfpv4
++MULTILIB_OSDIRNAMES   +=  mcpu.cortex-a9/mfloat-abi.hard/mfpu.neon-vfpv4=!a9_hard_neon-vfpv4
++MULTILIB_OSDIRNAMES   +=  mcpu.cortex-a7=!a7
++MULTILIB_OSDIRNAMES   +=  mcpu.cortex-a7/mfloat-abi.soft=!a7_soft
++MULTILIB_OSDIRNAMES   +=  mcpu.cortex-a7/mfloat-abi.softfp/mfpu.vfpv4=!a7_softfp_vfpv4
++MULTILIB_OSDIRNAMES   +=  mcpu.cortex-a7/mfloat-abi.softfp/mfpu.neon-vfpv4=!a7_softfp_neon-vfpv4
++MULTILIB_OSDIRNAMES   +=  mcpu.cortex-a7/mfloat-abi.hard/mfpu.neon-vfpv4=!a7_hard_neon-vfpv4
++MULTILIB_OSDIRNAMES   +=  mcpu.cortex-a17=!a17
++MULTILIB_OSDIRNAMES   +=  mcpu.cortex-a17/mfloat-abi.soft=!a17_soft
++MULTILIB_OSDIRNAMES   +=  mcpu.cortex-a17/mfloat-abi.softfp/mfpu.vfpv4=!a17_softfp_vfpv4
++MULTILIB_OSDIRNAMES   +=  mcpu.cortex-a17/mfloat-abi.softfp/mfpu.neon-vfpv4=!a17_softfp_neon-vfpv4
++MULTILIB_OSDIRNAMES   +=  mcpu.cortex-a17/mfloat-abi.hard/mfpu.neon-vfpv4=!a17_hard_neon-vfpv4
++MULTILIB_OSDIRNAMES   +=  mcpu.cortex-a17.cortex-a7=!a17_a7
++MULTILIB_OSDIRNAMES   +=  mcpu.cortex-a17.cortex-a7/mfloat-abi.soft=!a17_a7_soft
++MULTILIB_OSDIRNAMES   +=  mcpu.cortex-a17.cortex-a7/mfloat-abi.softfp/mfpu.vfpv4=!a17_a7_softfp_vfpv4
++MULTILIB_OSDIRNAMES   +=  mcpu.cortex-a17.cortex-a7/mfloat-abi.softfp/mfpu.neon-vfpv4=!a17_a7_softfp_neon-vfpv4
++MULTILIB_OSDIRNAMES   +=  mcpu.cortex-a17.cortex-a7/mfloat-abi.hard/mfpu.neon-vfpv4=!a17_a7_hard_neon-vfpv4
+diff -Naru old/gcc/config.gcc new/gcc/config.gcc
+--- old/gcc/config.gcc	2015-07-03 02:53:16.000000000 +0800
++++ new/gcc/config.gcc	2015-08-21 11:04:05.982593000 +0800
+@@ -1034,6 +1034,11 @@
+ 	*-androideabi)
+ 	    tmake_file="$tmake_file arm/t-linux-androideabi"
+ 	    ;;
++	*)
++	    if test x$enable_extra_hisi_multilibs = xyes; then
++		tmake_file="${tmake_file} arm/t-linux-hisi"
++	    fi
++	    ;;
+ 	esac
+ 	# The EABI requires the use of __cxa_atexit.
+ 	default_use_cxa_atexit=yes
+diff -Naru old/gcc/configure new/gcc/configure
+--- old/gcc/configure	2015-07-03 02:53:16.000000000 +0800
++++ new/gcc/configure	2015-08-21 11:04:06.061905000 +0800
+@@ -776,6 +776,7 @@
+ with_cpu
+ enable_multiarch
+ enable_multilib
++enable_extra_hisi_multilibs
+ coverage_flags
+ valgrind_command
+ valgrind_path_defines
+@@ -883,6 +884,7 @@
+ enable_coverage
+ enable_gather_detailed_mem_stats
+ with_stabs
++enable_extra_hisi_multilibs
+ enable_multilib
+ enable_multiarch
+ enable___cxa_atexit
+@@ -1595,6 +1597,8 @@
+                           enable detailed memory allocation stats gathering
+   --enable-multilib       enable library support for multiple ABIs
+   --enable-multiarch      enable support for multiarch paths
++  --enable-extra-hisi-multilibs
++                          enable HiSilicon library support for multiple ABIs
+   --enable-__cxa_atexit   enable __cxa_atexit for C++
+   --enable-decimal-float={no,yes,bid,dpd}
+ 			enable decimal float extension to C.  Selecting 'bid'
+@@ -6928,6 +6932,16 @@
+ fi
+ 
+ 
++# Determine whether or not extra HiSilicon multilibs are enabled.
++# Check whether --enable-extra-hisi-multilibs was given.
++if test "${enable_extra_hisi_multilibs+set}" = set; then :
++  enableval=$enable_extra_hisi_multilibs;
++else
++  enable_extra_hisi_multilibs=no
++fi
++
++
++
+ # Determine whether or not multilibs are enabled.
+ # Check whether --enable-multilib was given.
+ if test "${enable_multilib+set}" = set; then :
+diff -Naru old/gcc/configure.ac new/gcc/configure.ac
+--- old/gcc/configure.ac	2015-07-03 02:53:16.000000000 +0800
++++ new/gcc/configure.ac	2015-08-21 11:04:07.271943000 +0800
+@@ -603,6 +603,13 @@
+ stabs="$with_stabs",
+ stabs=no)
+ 
++# Determine whether or not extra HiSilicon multilibs are enabled.
++AC_ARG_ENABLE(extra-hisi-multilibs,
++[AS_HELP_STRING([--enable-extra-hisi-multilibs],
++		[enable HiSilicon library support for multiple ABIs])],
++[], [enable_extra_hisi_multilibs=no])
++AC_SUBST(enable_extra_hisi_multilibs)
++
+ # Determine whether or not multilibs are enabled.
+ AC_ARG_ENABLE(multilib,
+ [AS_HELP_STRING([--enable-multilib],

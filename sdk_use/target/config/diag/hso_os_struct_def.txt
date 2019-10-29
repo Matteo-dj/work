@@ -1,0 +1,14 @@
+#define __HI_TYPES_H__
+#define HI_START_HEADER
+#define HI_END_HEADER
+#include "hi_product_config.h"
+#include "hso_hdb_common.h"
+#include "hi_mdm_types.h"
+#include "hi_config.h"
+#include "dfx_low_power.h"
+#include "drv_dfx.h"
+#include "dfx_cpup.h"
+#include "dfx_track.h"
+#include "dfx_uart.h"
+#include "dfx_battery.h"
+#include "dfx_icc.h"

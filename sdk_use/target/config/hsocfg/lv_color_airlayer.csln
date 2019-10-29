@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HISTUDIO PLUGIN="0x110(2)">
+  <!--插件ID定义：DCL:0x100; ACL:0x101,CG:0x102,LV:0x110,SG:0x111,MV:0x112,DS:0x120,NVI:0x121,MS:0x122,LCM:0x123-->
+  <!--Huawei Technologies Co.,Ltd.-->
+  <!--HiStudio Logging Viewer Plugin cnofiguration file.-->
+  <!--shenhankun 20081020-->
+  <!--V1.0-->
+  <COLOR VALID="1">
+    <GRID GRID="0xffffffff" BACKGROUND="0xffffffff" TEXT="0xffffffff" HEAD="0xffffffff" HEADTEXT="0xffffffff" HEADBORDER="0xffffffff" AIR_BK_COL="0xffe9e9" LAYER_BK_COL="0xe9ffff" ROW_COLOR_TITLE="0xa" ROW_COLOR_ENABLE="0x1" VALID="1">
+      <GRID />
+    </GRID>
+    <ITEM>
+      <TITLE ID="0x1" SELECTED="0xffffffff">
+        <VALUE VALUE="0x8" TEXT="0xffffffff" BK="0xffffffff" />
+        <VALUE VALUE="0x1000" TEXT="0xffffffff" BK="0xe9ffff" />
+        <VALUE VALUE="0x2000" TEXT="0xffffffff" BK="0xffe9e9" />
+        <VALUE VALUE="0x200" TEXT="0xffffffff" BK="0xffe9e9" />
+        <VALUE VALUE="0xffffffff" TEXT="0xffffffff" BK="0xffffffff" />
+      </TITLE>
+      <TITLE ID="0xa" SELECTED="0x7b00">
+        <VALUE VALUE="0x7b00" TEXT="0xff" BK="0xff00" />
+        <VALUE VALUE="0x7b01" TEXT="0xffffffff" BK="0xffffffff" />
+        <VALUE VALUE="0x7a00" TEXT="0x800000" BK="0x80ff80" />
+        <VALUE VALUE="0x7a01" TEXT="0xff0000" BK="0x80ff80" />
+        <VALUE VALUE="0x7a02" TEXT="0x0000ff" BK="0x8080ff" />
+        <VALUE VALUE="0x7a03" TEXT="0xff0000" BK="0x80ffff" />
+      </TITLE>
+    </ITEM>
+  </COLOR>
+  <RESET_NODE>
+    <COLOR VALID="1">
+      <GRID GRID="0xffffffff" BACKGROUND="0xffffffff" TEXT="0xffffffff" HEAD="0xffffffff" HEADTEXT="0xffffffff" HEADBORDER="0xffffffff" AIR_BK_COL="0xffe9e9" LAYER_BK_COL="0xe9ffff" ROW_COLOR_TITLE="0xa" ROW_COLOR_ENABLE="0x0" VALID="1">
+        <GRID />
+      </GRID>
+      <ITEM>
+        <TITLE ID="0x1" SELECTED="0xffffffff">
+          <VALUE VALUE="0x8" TEXT="0xffffffff" BK="0xffffffff" />
+          <VALUE VALUE="0x1000" TEXT="0xffffffff" BK="0xe9ffff" />
+          <VALUE VALUE="0x2000" TEXT="0xffffffff" BK="0xffe9e9" />
+          <VALUE VALUE="0x200" TEXT="0xffffffff" BK="0xffe9e9" />
+          <VALUE VALUE="0xffffffff" TEXT="0xffffffff" BK="0xffffffff" />
+        </TITLE>
+        <TITLE ID="0xa" SELECTED="0x7b00">
+          <VALUE VALUE="0x7b00" TEXT="0xff" BK="0xff00" />
+          <VALUE VALUE="0x7b01" TEXT="0xffffffff" BK="0xffffffff" />
+          <VALUE VALUE="0x7a00" TEXT="0x800000" BK="0x80ff80" />
+          <VALUE VALUE="0x7a01" TEXT="0xff0000" BK="0x80ff80" />
+          <VALUE VALUE="0x7a02" TEXT="0x0000ff" BK="0x8080ff" />
+          <VALUE VALUE="0x7a03" TEXT="0xff0000" BK="0x80ffff" />
+        </TITLE>
+      </ITEM>
+    </COLOR>
+  </RESET_NODE>
+</HISTUDIO>

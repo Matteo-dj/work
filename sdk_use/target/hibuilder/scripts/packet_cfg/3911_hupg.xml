@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Huawei Technologies Co.,Ltd.-->
+<!--产品形态定义-->
+<!--要区分生成hupg-->
+<!--@VERSION为替代版本号-->
+<!--yuming 20160629-->
+<!--V1.0-->
+<PRODUCT name="HI3911">
+    <PROJECT name="MRS">
+        <APP NAME="MRS" ID="0x1" PARAM_DEF_FILE="" MODE="HCT">
+            <Prod ID="firmware_bootloader"       TYPE="hupg"    NAME="boot产品形态"         SRC_NAME="bootloader.bin.zpk"                                                               DEV="CCO_STA_NDM" CFG_FILE="boot_hupg.ini" DESCRIPTION="" />
+			<Prod ID="firmware_cco" TYPE="hupg" NAME="CCO产品形态" SRC_NAME="hi3911_cco_mrs.bin.zpk,nv_001_001.xml.hnv.zpk"      DEV="CCO" CFG_FILE="cco_hupg.ini"  DESCRIPTION="" />
+            <Prod ID="firmware_cco_for_staii_prod"   TYPE="hupg"    NAME="II采工装陪测CCO"        SRC_NAME="hi3911_cco_mrs.bin.zpk,nv_001_001.1.xml.hnv.zpk"                                       DEV="CCO" CFG_FILE="cco_hupg.ini" DESCRIPTION="" />
+            <Prod ID="firmware_cco_prod_diag"    TYPE="hupg"    NAME="抄控宝及发射机检验工装陪测CCO"       SRC_NAME="hi3911_cco_mrs.bin.zpk,nv_001_001.41.xml.hnv.zpk"  DEV="CCO" CFG_FILE="cco_hupg.ini" DESCRIPTION="" />
+            <Prod ID="firmware_sta_t"            TYPE="hupg"    NAME="三相STA"              SRC_NAME="hi3911_sta_mrs.bin.zpk,nv_031_500.xml.hnv.zpk"    DEV="STA" CFG_FILE="sta_hupg.ini" DESCRIPTION="" />
+            <Prod ID="firmware_diag"             TYPE="hupg"    NAME="三代抄控器"           SRC_NAME="hi3911_ndm_mrs.bin.zpk,nv_061_061.xml.hnv.zpk"          DEV="NDM" CFG_FILE="ndm_hupg.ini" DESCRIPTION="" />
+            <Prod ID="firmware_diag_meter_check" TYPE="hupg"    NAME="整表检测抄控器"       SRC_NAME="hi3911_ndm_mrs.bin.zpk,nv_061_061.1.xml.hnv.zpk"        DEV="NDM" CFG_FILE="ndm_hupg.ini" DESCRIPTION="" />
+            <Prod ID="firmware_sta"              TYPE="hupg"    NAME="STA产品形态"          SRC_NAME="hi3911_sta_mrs.bin.zpk,nv_101_500.xml.hnv.zpk"    DEV="STA" CFG_FILE="sta_hupg.ini" DESCRIPTION="" />
+            <Prod ID="firmware_usta"             TYPE="hupg"    NAME="USTA产品形态"         SRC_NAME="hi3911_sta_mrs.bin.zpk,nv_101_500.1.xml.hnv.zpk"  DEV="STA" CFG_FILE="sta_hupg.ini" DESCRIPTION="" />
+	        <Prod ID="firmware_sta_for_cco_prod" TYPE="hupg"    NAME="CCO工装陪测STA产品形态"   SRC_NAME="hi3911_sta_mrs.bin.zpk,nv_101_500.2.xml.hnv.zpk"    DEV="STA" CFG_FILE="sta_hupg.ini" DESCRIPTION="" />
+            <Prod ID="firmware_stai"             TYPE="hupg"    NAME="I型采集器"            SRC_NAME="hi3911_sta_mrs.bin.zpk,nv_105_500.xml.hnv.zpk"    DEV="STA" CFG_FILE="sta_hupg.ini" DESCRIPTION="" />
+            <Prod ID="firmware_staii"            TYPE="hupg"    NAME="II型采集器"           SRC_NAME="hi3911_sta_mrs.bin.zpk,nv_111_500.xml.hnv.zpk"    DEV="STA" CFG_FILE="sta_hupg.ini" DESCRIPTION="" />
+            <Prod ID="firmware_staii_prodline"   TYPE="hupg"    NAME="II采产线工装被检模块"     SRC_NAME="hi3911_sta_mrs.bin.zpk,nv_500_111.xml.hnv.zpk"    DEV="STA" CFG_FILE="sta_hupg.ini" DESCRIPTION="" />
+            <Prod ID="firmware_sta_prodline"     TYPE="hupg"    NAME="STA产线工装被检STA模块"      SRC_NAME="hi3911_sta_mrs.bin.zpk,nv_500_500.xml.hnv.zpk"    DEV="STA" CFG_FILE="sta_hupg.ini" DESCRIPTION="" />
+            <Prod ID="firmware_sta_t_prodline"     TYPE="hupg"    NAME="三相STA产线工装被检模块"      SRC_NAME="hi3911_sta_mrs.bin.zpk,nv_500_031.xml.hnv.zpk"    DEV="STA" CFG_FILE="sta_hupg.ini" DESCRIPTION="" />
+            <Prod ID="firmware_stai_prodline"    TYPE="hupg"    NAME="STA产线工装被检I采模块"      SRC_NAME="hi3911_sta_mrs.bin.zpk,nv_105_500.1.xml.hnv.zpk"  DEV="STA" CFG_FILE="sta_hupg.ini" DESCRIPTION="" />
+            <Prod ID="firmware_cco_for_sta_prodline"     TYPE="hupg"    NAME="STA产线工装陪测CCO"      SRC_NAME="hi3911_cco_mrs.bin.zpk,nv_801_801.xml.hnv.zpk"                                         DEV="CCO" CFG_FILE="cco_hupg.ini" DESCRIPTION="" />
+            <Prod ID="firmware_cco_for_sta_prodcheck"    TYPE="hupg"    NAME="STA出厂工装陪测CCO"  SRC_NAME="hi3911_cco_mrs.bin.zpk,nv_802_802.xml.hnv.zpk"                                         DEV="CCO" CFG_FILE="cco_hupg.ini" DESCRIPTION="" />
+            <Prod ID="firmware_cco_sta"          TYPE="bupg"    NAME="CCO_STA全网升级文件"  SRC_NAME="mrs_@VERSION_firmware_cco.hupg,mrs_@VERSION_firmware_sta.hupg"                           DEV="CCO_STA" CFG_FILE="cco_sta_hupg.ini" DESCRIPTION="" />
+            <Prod ID="firmware_cco"              TYPE="hbin"    NAME="CCO产品形态"          SRC_NAME="bootloader.bin,0,mrs_@VERSION_firmware_cco.hupg,0xc000,0x75000"                       DEV="CCO" DESCRIPTION="" />
+            <Prod ID="firmware_sta"              TYPE="hbin"    NAME="STA产品形态"          SRC_NAME="bootloader.bin,0,mrs_@VERSION_firmware_sta.hupg,0xc000,0x75000"                       DEV="STA" DESCRIPTION="" />
+            <Prod ID="firmware_diag"             TYPE="hbin"    NAME="NDM产品形态"          SRC_NAME="bootloader.bin,0,mrs_@VERSION_firmware_diag.hupg,0xc000,0x75000"                      DEV="NDM" DESCRIPTION="" />
+            <Prod ID="firmware_cco_prod_diag"    TYPE="hbin"    NAME="抄控宝及发射机检验工装陪测CCO"       SRC_NAME="bootloader.bin,0,mrs_@VERSION_firmware_cco_prod_diag.hupg,0xc000,0x75000"             DEV="CCO" DESCRIPTION="" />
+            <Prod ID="firmware_cco_for_staii_prod"   TYPE="hbin"    NAME="II采工装陪测CCO"        SRC_NAME="bootloader.bin,0,mrs_@VERSION_firmware_cco_for_staii_prod.hupg,0xc000,0x75000"            DEV="CCO" DESCRIPTION="" />
+            <Prod ID="firmware_cco_for_sta_prodcheck"    TYPE="hbin"    NAME="STA出厂工装陪测CCO"  SRC_NAME="bootloader.bin,0,mrs_@VERSION_firmware_cco_for_sta_prodcheck.hupg,0xc000,0x75000"             DEV="CCO" DESCRIPTION="" />
+            <Prod ID="firmware_cco_for_sta_prodline"     TYPE="hbin"    NAME="STA产线工装陪测CCO"          SRC_NAME="bootloader.bin,0,mrs_@VERSION_firmware_cco_for_sta_prodline.hupg,0xc000,0x75000"              DEV="CCO" DESCRIPTION="" />
+	        <Prod ID="firmware_sta_for_cco_prod"     TYPE="hbin"    NAME="CCO工装陪测STA产品形态"          SRC_NAME="bootloader.bin,0,mrs_@VERSION_firmware_sta_for_cco_prod.hupg,0xc000,0x75000"                       DEV="STA" DESCRIPTION="" />
+            <Prod ID="firmware_diag_meter_check" TYPE="hbin"    NAME="整表检测抄控器"       SRC_NAME="bootloader.bin,0,mrs_@VERSION_firmware_diag_meter_check.hupg,0xc000,0x75000"          DEV="NDM" DESCRIPTION="" />
+            <Prod ID="firmware_sta_prodline"     TYPE="hbin"    NAME="STA产线工装被检STA模块烧片文件"      SRC_NAME="bootloader.bin,0,mrs_@VERSION_firmware_sta_prodline.hupg,0xc000,0x75000"              DEV="STA" DESCRIPTION="" />
+            <Prod ID="firmware_sta_t_prodline"     TYPE="hbin"    NAME="三相STA产线工装被检模块烧片文件"      SRC_NAME="bootloader.bin,0,mrs_@VERSION_firmware_sta_t_prodline.hupg,0xc000,0x75000"              DEV="STA" DESCRIPTION="" />
+            <Prod ID="firmware_sta_t"            TYPE="hbin"    NAME="三相STA"              SRC_NAME="bootloader.bin,0,mrs_@VERSION_firmware_sta_t.hupg,0xc000,0x75000"                     DEV="STA" DESCRIPTION="" />
+            <Prod ID="firmware_stai"             TYPE="hbin"    NAME="I型采集器"            SRC_NAME="bootloader.bin,0,mrs_@VERSION_firmware_stai.hupg,0xc000,0x75000"                      DEV="STA" DESCRIPTION="" />
+            <Prod ID="firmware_stai_prodline"    TYPE="hbin"    NAME="STA产线工装被检I采模块烧片文件"      SRC_NAME="bootloader.bin,0,mrs_@VERSION_firmware_stai_prodline.hupg,0xc000,0x75000"             DEV="STA" DESCRIPTION="" />
+            <Prod ID="firmware_staii"            TYPE="hbin"    NAME="II型采集器"           SRC_NAME="bootloader.bin,0,mrs_@VERSION_firmware_staii.hupg,0xc000,0x75000"                     DEV="STA" DESCRIPTION="" />
+            <Prod ID="firmware_staii_prodline"   TYPE="hbin"    NAME="II采产线工装被检模块烧片文件"     SRC_NAME="bootloader.bin,0,mrs_@VERSION_firmware_staii_prodline.hupg,0xc000,0x75000"            DEV="STA" DESCRIPTION="" />
+            <Prod ID="firmware_usta"             TYPE="hbin"    NAME="USTA产品形态"         SRC_NAME="bootloader.bin,0,mrs_@VERSION_firmware_usta.hupg,0xc000,0x75000"                      DEV="STA" DESCRIPTION="" />
+        </APP> 
+	</PROJECT>
+    <PROJECT name="CSGMRS">
+        <APP NAME="CSGMRS" ID="0x1" PARAM_DEF_FILE="" MODE="HCT">
+            <Prod ID="firmware_bootloader"       TYPE="hupg"    NAME="boot产品形态"         SRC_NAME="bootloader.bin.zpk"                                                               DEV="CCO_STA_NDM" CFG_FILE="boot_hupg.ini" DESCRIPTION="" />
+            <Prod ID="firmware_cco"              TYPE="hupg"    NAME="CCO产品形态"          SRC_NAME="hi3911_cco_csgmrs.bin.zpk,nv_001_001.xml.hnv.zpk"      DEV="CCO" CFG_FILE="cco_hupg.ini"  DESCRIPTION="" />
+            <Prod ID="firmware_sta"              TYPE="hupg"    NAME="STA产品形态"          SRC_NAME="hi3911_sta_csgmrs.bin.zpk,nv_101_500.xml.hnv.zpk"    DEV="STA" CFG_FILE="sta_hupg.ini" DESCRIPTION="" />
+            <Prod ID="firmware_sta_for_cco_prod" TYPE="hupg"    NAME="CCO工装陪测STA产品形态"          SRC_NAME="hi3911_sta_csgmrs.bin.zpk,nv_101_500.2.xml.hnv.zpk"    DEV="STA" CFG_FILE="sta_hupg.ini" DESCRIPTION="" />
+            <Prod ID="firmware_cco_prod_diag"   TYPE="hupg"    NAME="抄控宝及发射机检验工装陪测CCO"        SRC_NAME="hi3911_cco_csgmrs.bin.zpk,nv_001_001.41.xml.hnv.zpk"  DEV="CCO" CFG_FILE="cco_hupg.ini" DESCRIPTION="" />			
+            <Prod ID="firmware_cco_for_staii_prod"   TYPE="hupg"    NAME="II采工装陪测CCO"        SRC_NAME="hi3911_cco_csgmrs.bin.zpk,nv_001_001.1.xml.hnv.zpk"  DEV="CCO" CFG_FILE="cco_hupg.ini" DESCRIPTION="" />
+            <Prod ID="firmware_cco_for_sta_prodcheck"    TYPE="hupg"    NAME="STA出厂工装陪测CCO"  SRC_NAME="hi3911_cco_csgmrs.bin.zpk,nv_802_802.xml.hnv.zpk"  DEV="CCO" CFG_FILE="cco_hupg.ini" DESCRIPTION="" />
+            <Prod ID="firmware_cco_for_sta_prodline"     TYPE="hupg"    NAME="STA产线工装陪测CCO"      SRC_NAME="hi3911_cco_csgmrs.bin.zpk,nv_801_801.xml.hnv.zpk"	 DEV="CCO" CFG_FILE="cco_hupg.ini" DESCRIPTION="" />
+            <Prod ID="firmware_sta_prodline"     TYPE="hupg"    NAME="STA产线工装被检STA模块"      SRC_NAME="hi3911_sta_csgmrs.bin.zpk,nv_500_500.xml.hnv.zpk"    DEV="STA" CFG_FILE="sta_hupg.ini" DESCRIPTION="" />
+            <Prod ID="firmware_sta_t"            TYPE="hupg"    NAME="三相STA"              SRC_NAME="hi3911_sta_csgmrs.bin.zpk,nv_031_500.xml.hnv.zpk"    DEV="STA" CFG_FILE="sta_hupg.ini" DESCRIPTION="" />			
+            <Prod ID="firmware_diag"             TYPE="hupg"    NAME="三代抄控器"           SRC_NAME="hi3911_ndm_csgmrs.bin.zpk,nv_061_061.xml.hnv.zpk"          DEV="NDM" CFG_FILE="ndm_hupg.ini" DESCRIPTION="" />
+            <Prod ID="firmware_diag_for_cco_prod" TYPE="hupg"    NAME="CCO工装陪测抄控宝产品形态"          SRC_NAME="hi3911_ndm_csgmrs.bin.zpk,nv_061_061.2.xml.hnv.zpk"    DEV="NDM" CFG_FILE="ndm_hupg.ini" DESCRIPTION="" />
+            <Prod ID="firmware_diag_for_cco_prod"              TYPE="hbin"    NAME="CCO工装陪测抄控宝产品形态"          SRC_NAME="bootloader.bin,0,csgmrs_@VERSION_firmware_diag_for_cco_prod.hupg,0xc000,0x75000"                       DEV="NDM" DESCRIPTION="" />
+	    	<Prod ID="firmware_diag"             TYPE="hbin"    NAME="NDM产品形态"          SRC_NAME="bootloader.bin,0,csgmrs_@VERSION_firmware_diag.hupg,0xc000,0x75000"                      DEV="NDM" DESCRIPTION="" />
+            <Prod ID="firmware_stai"             TYPE="hupg"    NAME="I型采集器"            SRC_NAME="hi3911_sta_csgmrs.bin.zpk,nv_105_500.xml.hnv.zpk"    DEV="STA" CFG_FILE="sta_hupg.ini" DESCRIPTION="" />
+            <Prod ID="firmware_stai_prodline"    TYPE="hupg"    NAME="STA产线工装被检I采模块"      SRC_NAME="hi3911_sta_csgmrs.bin.zpk,nv_105_500.1.xml.hnv.zpk"  DEV="STA" CFG_FILE="sta_hupg.ini" DESCRIPTION="" />			
+            <Prod ID="firmware_staii"            TYPE="hupg"    NAME="II型采集器"           SRC_NAME="hi3911_sta_csgmrs.bin.zpk,nv_111_500.xml.hnv.zpk"    DEV="STA" CFG_FILE="sta_hupg.ini" DESCRIPTION="" />
+            <Prod ID="firmware_staii_prodline"   TYPE="hupg"    NAME="II采产线工装被检模块"     SRC_NAME="hi3911_sta_csgmrs.bin.zpk,nv_500_111.xml.hnv.zpk"    DEV="STA" CFG_FILE="sta_hupg.ini" DESCRIPTION="" />
+            <Prod ID="firmware_cco_sta"          TYPE="bupg"    NAME="CCO_STA全网升级文件"  SRC_NAME="csgmrs_@VERSION_firmware_cco.hupg,csgmrs_@VERSION_firmware_sta.hupg"                           DEV="CCO_STA" CFG_FILE="cco_sta_hupg.ini" DESCRIPTION="" />
+            <Prod ID="firmware_cco"              TYPE="hbin"    NAME="CCO产品形态"          SRC_NAME="bootloader.bin,0,csgmrs_@VERSION_firmware_cco.hupg,0xc000,0x75000"                       DEV="CCO" DESCRIPTION="" />
+            <Prod ID="firmware_sta"              TYPE="hbin"    NAME="STA产品形态"          SRC_NAME="bootloader.bin,0,csgmrs_@VERSION_firmware_sta.hupg,0xc000,0x75000"                       DEV="STA" DESCRIPTION="" />
+            <Prod ID="firmware_sta_for_cco_prod"              TYPE="hbin"    NAME="CCO工装陪测STA产品形态"          SRC_NAME="bootloader.bin,0,csgmrs_@VERSION_firmware_sta_for_cco_prod.hupg,0xc000,0x75000"                       DEV="STA" DESCRIPTION="" />
+            <Prod ID="firmware_cco_prod_diag"    TYPE="hbin"    NAME="抄控宝及发射机检验工装陪测CCO"       SRC_NAME="bootloader.bin,0,csgmrs_@VERSION_firmware_cco_prod_diag.hupg,0xc000,0x75000"             DEV="CCO" DESCRIPTION="" />
+            <Prod ID="firmware_cco_for_staii_prod"   TYPE="hbin"    NAME="II采工装陪测CCO"        SRC_NAME="bootloader.bin,0,csgmrs_@VERSION_firmware_cco_for_staii_prod.hupg,0xc000,0x75000"            DEV="CCO" DESCRIPTION="" />
+            <Prod ID="firmware_cco_for_sta_prodcheck"    TYPE="hbin"    NAME="STA出厂工装陪测CCO"  SRC_NAME="bootloader.bin,0,csgmrs_@VERSION_firmware_cco_for_sta_prodcheck.hupg,0xc000,0x75000"             DEV="CCO" DESCRIPTION="" />
+            <Prod ID="firmware_cco_for_sta_prodline"     TYPE="hbin"    NAME="STA产线工装陪测CCO"          SRC_NAME="bootloader.bin,0,csgmrs_@VERSION_firmware_cco_for_sta_prodline.hupg,0xc000,0x75000"              DEV="CCO" DESCRIPTION="" />
+            <Prod ID="firmware_sta_prodline"     TYPE="hbin"    NAME="STA产线工装被检STA模块烧片文件"      SRC_NAME="bootloader.bin,0,csgmrs_@VERSION_firmware_sta_prodline.hupg,0xc000,0x75000"              DEV="STA" DESCRIPTION="" />
+            <Prod ID="firmware_sta_t"            TYPE="hbin"    NAME="三相STA"              SRC_NAME="bootloader.bin,0,csgmrs_@VERSION_firmware_sta_t.hupg,0xc000,0x75000"                     DEV="STA" DESCRIPTION="" />
+            <Prod ID="firmware_stai"             TYPE="hbin"    NAME="I型采集器"            SRC_NAME="bootloader.bin,0,csgmrs_@VERSION_firmware_stai.hupg,0xc000,0x75000"                      DEV="STA" DESCRIPTION="" />
+            <Prod ID="firmware_stai_prodline"    TYPE="hbin"    NAME="STA产线工装被检I采模块烧片文件"      SRC_NAME="bootloader.bin,0,csgmrs_@VERSION_firmware_stai_prodline.hupg,0xc000,0x75000"             DEV="STA" DESCRIPTION="" />
+            <Prod ID="firmware_staii"            TYPE="hbin"    NAME="II型采集器"           SRC_NAME="bootloader.bin,0,csgmrs_@VERSION_firmware_staii.hupg,0xc000,0x75000"                     DEV="STA" DESCRIPTION="" />
+            <Prod ID="firmware_staii_prodline"   TYPE="hbin"    NAME="II采产线工装被检模块烧片文件"     SRC_NAME="bootloader.bin,0,csgmrs_@VERSION_firmware_staii_prodline.hupg,0xc000,0x75000"            DEV="STA" DESCRIPTION="" />
+        </APP> 
+    </PROJECT>		
+	<PROJECT name="CTS">
+    <APP NAME="CTS" ID="0x1" PARAM_DEF_FILE="" MODE="HCT">
+      <Prod ID="firmware_bootloader" TYPE="hupg" NAME="boot产品形态" SRC_NAME="bootloader.bin.zpk" DEV="CCO_STA_NDM" CFG_FILE="boot_hupg.ini" DESCRIPTION="" />
+      <Prod ID="firmware_cco" TYPE="hupg" NAME="CCO产品形态" SRC_NAME="hi3911_cco_cts.bin.zpk,nv_001_001.xml.hnv.zpk" DEV="CCO" CFG_FILE="cco_hupg.ini" DESCRIPTION="" />
+      <Prod ID="firmware_cco_for_staii_prod" TYPE="hupg" NAME="II采工装陪测CCO" SRC_NAME="hi3911_cco_cts.bin.zpk,nv_001_001.1.xml.hnv.zpk" DEV="CCO" CFG_FILE="cco_hupg.ini" DESCRIPTION="" />
+      <Prod ID="firmware_cco_prod_diag" TYPE="hupg" NAME="抄控宝及发射机检验工装陪测CCO" SRC_NAME="hi3911_cco_cts.bin.zpk,nv_001_001.41.xml.hnv.zpk" DEV="CCO" CFG_FILE="cco_hupg.ini" DESCRIPTION="" />
+      <Prod ID="firmware_sta_t" TYPE="hupg" NAME="三相STA" SRC_NAME="hi3911_sta_cts.bin.zpk,nv_031_500.xml.hnv.zpk" DEV="STA" CFG_FILE="sta_hupg.ini" DESCRIPTION="" />
+      <Prod ID="firmware_diag" TYPE="hupg" NAME="三代抄控器" SRC_NAME="hi3911_ndm_cts.bin.zpk,nv_061_061.xml.hnv.zpk" DEV="NDM" CFG_FILE="ndm_hupg.ini" DESCRIPTION="" />
+      <Prod ID="firmware_diag_meter_check" TYPE="hupg" NAME="整表检测抄控器" SRC_NAME="hi3911_ndm_cts.bin.zpk,nv_061_061.1.xml.hnv.zpk" DEV="NDM" CFG_FILE="ndm_hupg.ini" DESCRIPTION="" />
+      <Prod ID="firmware_sta" TYPE="hupg" NAME="STA产品形态" SRC_NAME="hi3911_sta_cts.bin.zpk,nv_101_500.xml.hnv.zpk" DEV="STA" CFG_FILE="sta_hupg.ini" DESCRIPTION="" />
+      <Prod ID="firmware_usta" TYPE="hupg" NAME="USTA产品形态" SRC_NAME="hi3911_sta_cts.bin.zpk,nv_101_500.1.xml.hnv.zpk" DEV="STA" CFG_FILE="sta_hupg.ini" DESCRIPTION="" />
+      <Prod ID="firmware_sta_for_cco_prod" TYPE="hupg" NAME="CCO工装陪测STA产品形态" SRC_NAME="hi3911_sta_cts.bin.zpk,nv_101_500.2.xml.hnv.zpk" DEV="STA" CFG_FILE="sta_hupg.ini" DESCRIPTION="" />
+	  <Prod ID="firmware_stai" TYPE="hupg" NAME="I型采集器" SRC_NAME="hi3911_sta_cts.bin.zpk,nv_105_500.xml.hnv.zpk" DEV="STA" CFG_FILE="sta_hupg.ini" DESCRIPTION="" />
+      <Prod ID="firmware_staii" TYPE="hupg" NAME="II型采集器" SRC_NAME="hi3911_sta_cts.bin.zpk,nv_111_500.xml.hnv.zpk" DEV="STA" CFG_FILE="sta_hupg.ini" DESCRIPTION="" />
+      <Prod ID="firmware_staii_prodline" TYPE="hupg" NAME="II采产线工装被检模块" SRC_NAME="hi3911_sta_cts.bin.zpk,nv_500_111.xml.hnv.zpk" DEV="STA" CFG_FILE="sta_hupg.ini" DESCRIPTION="" />
+      <Prod ID="firmware_sta_prodline" TYPE="hupg" NAME="STA产线工装被检STA模块" SRC_NAME="hi3911_sta_cts.bin.zpk,nv_500_500.xml.hnv.zpk" DEV="STA" CFG_FILE="sta_hupg.ini" DESCRIPTION="" />
+      <Prod ID="firmware_stai_prodline" TYPE="hupg" NAME="STA产线工装被检I采模块" SRC_NAME="hi3911_sta_cts.bin.zpk,nv_105_500.1.xml.hnv.zpk" DEV="STA" CFG_FILE="sta_hupg.ini" DESCRIPTION="" />
+      <Prod ID="firmware_cco_for_sta_prodline" TYPE="hupg" NAME="STA产线工装陪测CCO" SRC_NAME="hi3911_cco_cts.bin.zpk,nv_801_801.xml.hnv.zpk" DEV="CCO"  CFG_FILE="cco_hupg.ini" DESCRIPTION="" />
+      <Prod ID="firmware_cco_for_sta_prodcheck" TYPE="hupg" NAME="STA出厂工装陪测CCO" SRC_NAME="hi3911_cco_cts.bin.zpk,nv_802_802.xml.hnv.zpk" DEV="CCO" CFG_FILE="cco_hupg.ini" DESCRIPTION="" />
+      <Prod ID="firmware_cco_sta" TYPE="bupg" NAME="CCO_STA全网升级文件" SRC_NAME="cts_@VERSION_firmware_cco.hupg,cts_@VERSION_firmware_sta.hupg" DEV="CCO_STA" CFG_FILE="cco_sta_hupg.ini" DESCRIPTION="" />
+      <Prod ID="firmware_cco" TYPE="hbin" NAME="CCO产品形态" SRC_NAME="bootloader.bin,0,cts_@VERSION_firmware_cco.hupg,0xc000,0x75000" DEV="CCO" DESCRIPTION="" />
+      <Prod ID="firmware_sta" TYPE="hbin" NAME="STA产品形态" SRC_NAME="bootloader.bin,0,cts_@VERSION_firmware_sta.hupg,0xc000,0x75000" DEV="STA" DESCRIPTION="" />
+      <Prod ID="firmware_diag" TYPE="hbin" NAME="NDM产品形态" SRC_NAME="bootloader.bin,0,cts_@VERSION_firmware_diag.hupg,0xc000,0x75000" DEV="NDM" DESCRIPTION="" />
+      <Prod ID="firmware_cco_prod_diag" TYPE="hbin" NAME="抄控宝及发射机检验工装陪测CCO" SRC_NAME="bootloader.bin,0,cts_@VERSION_firmware_cco_prod_diag.hupg,0xc000,0x75000" DEV="CCO" DESCRIPTION="" />
+      <Prod ID="firmware_cco_for_staii_prod" TYPE="hbin" NAME="II采工装陪测CCO" SRC_NAME="bootloader.bin,0,cts_@VERSION_firmware_cco_for_staii_prod.hupg,0xc000,0x75000" DEV="CCO" DESCRIPTION="" />
+      <Prod ID="firmware_cco_for_sta_prodcheck" TYPE="hbin" NAME="STA出厂工装陪测CCO" SRC_NAME="bootloader.bin,0,cts_@VERSION_firmware_cco_for_sta_prodcheck.hupg,0xc000,0x75000" DEV="CCO" DESCRIPTION="" />
+      <Prod ID="firmware_cco_for_sta_prodline" TYPE="hbin" NAME="STA产线工装陪测CCO" SRC_NAME="bootloader.bin,0,cts_@VERSION_firmware_cco_for_sta_prodline.hupg,0xc000,0x75000" DEV="CCO" DESCRIPTION="" />
+      <Prod ID="firmware_diag_meter_check" TYPE="hbin" NAME="整表检测抄控器" SRC_NAME="bootloader.bin,0,cts_@VERSION_firmware_diag_meter_check.hupg,0xc000,0x75000" DEV="NDM" DESCRIPTION="" />
+      <Prod ID="firmware_sta_prodline" TYPE="hbin" NAME="STA产线工装被检STA模块烧片文件" SRC_NAME="bootloader.bin,0,cts_@VERSION_firmware_sta_prodline.hupg,0xc000,0x75000" DEV="STA" DESCRIPTION="" />
+	  <Prod ID="firmware_sta_for_cco_prod" TYPE="hbin" NAME="CCO工装陪测STA产品形态" SRC_NAME="bootloader.bin,0,cts_@VERSION_firmware_sta_for_cco_prod.hupg,0xc000,0x75000" DEV="STA" DESCRIPTION="" />
+      <Prod ID="firmware_sta_t" TYPE="hbin" NAME="三相STA" SRC_NAME="bootloader.bin,0,cts_@VERSION_firmware_sta_t.hupg,0xc000,0x75000" DEV="STA" DESCRIPTION="" />
+      <Prod ID="firmware_stai" TYPE="hbin" NAME="I型采集器" SRC_NAME="bootloader.bin,0,cts_@VERSION_firmware_stai.hupg,0xc000,0x75000" DEV="STA" DESCRIPTION="" />
+      <Prod ID="firmware_stai_prodline" TYPE="hbin" NAME="STA产线工装被检I采模块烧片文件" SRC_NAME="bootloader.bin,0,cts_@VERSION_firmware_stai_prodline.hupg,0xc000,0x75000" DEV="STA" DESCRIPTION="" />
+      <Prod ID="firmware_staii" TYPE="hbin" NAME="II型采集器" SRC_NAME="bootloader.bin,0,cts_@VERSION_firmware_staii.hupg,0xc000,0x75000" DEV="STA" DESCRIPTION="" />
+      <Prod ID="firmware_staii_prodline" TYPE="hbin" NAME="II采产线工装被检模块烧片文件" SRC_NAME="bootloader.bin,0,cts_@VERSION_firmware_staii_prodline.hupg,0xc000,0x75000" DEV="STA" DESCRIPTION="" />
+      <Prod ID="firmware_usta" TYPE="hbin" NAME="USTA产品形态" SRC_NAME="bootloader.bin,0,cts_@VERSION_firmware_usta.hupg,0xc000,0x75000" DEV="STA" DESCRIPTION="" />
+    </APP>
+  </PROJECT>
+   <PROJECT name="DEMO">
+    <APP NAME="DEMO" ID="0x1" PARAM_DEF_FILE="" MODE="HCT">
+      <Prod ID="firmware_bootloader" TYPE="hupg" NAME="boot产品形态" SRC_NAME="bootloader.bin.zpk" DEV="CCO_STA_NDM" CFG_FILE="boot_hupg.ini" DESCRIPTION="" />
+      <Prod ID="firmware_cco" TYPE="hupg" NAME="CCO产品形态" SRC_NAME="hi3911_cco_demo.bin.zpk,nv_001_001.xml.hnv.zpk" DEV="CCO" CFG_FILE="cco_hupg.ini" DESCRIPTION="" />
+      <Prod ID="firmware_cco_for_staii_prod" TYPE="hupg" NAME="II采工装陪测CCO" SRC_NAME="hi3911_cco_demo.bin.zpk,nv_001_001.1.xml.hnv.zpk" DEV="CCO" CFG_FILE="cco_hupg.ini" DESCRIPTION="" />
+      <Prod ID="firmware_cco_prod_diag" TYPE="hupg" NAME="抄控宝及发射机检验工装陪测CCO" SRC_NAME="hi3911_cco_demo.bin.zpk,nv_001_001.41.xml.hnv.zpk" DEV="CCO" CFG_FILE="cco_hupg.ini" DESCRIPTION="" />
+      <Prod ID="firmware_sta_t" TYPE="hupg" NAME="三相STA" SRC_NAME="hi3911_sta_demo.bin.zpk,nv_031_500.xml.hnv.zpk" DEV="STA" CFG_FILE="sta_hupg.ini" DESCRIPTION="" />
+      <Prod ID="firmware_diag" TYPE="hupg" NAME="三代抄控器" SRC_NAME="hi3911_ndm_demo.bin.zpk,nv_061_061.xml.hnv.zpk" DEV="NDM" CFG_FILE="ndm_hupg.ini" DESCRIPTION="" />
+      <Prod ID="firmware_diag_meter_check" TYPE="hupg" NAME="整表检测抄控器" SRC_NAME="hi3911_ndm_demo.bin.zpk,nv_061_061.1.xml.hnv.zpk" DEV="NDM" CFG_FILE="ndm_hupg.ini" DESCRIPTION="" />
+      <Prod ID="firmware_sta" TYPE="hupg" NAME="STA产品形态" SRC_NAME="hi3911_sta_demo.bin.zpk,nv_101_500.xml.hnv.zpk" DEV="STA" CFG_FILE="sta_hupg.ini" DESCRIPTION="" />
+      <Prod ID="firmware_usta" TYPE="hupg" NAME="USTA产品形态" SRC_NAME="hi3911_sta_demo.bin.zpk,nv_101_500.1.xml.hnv.zpk" DEV="STA" CFG_FILE="sta_hupg.ini" DESCRIPTION="" />
+      <Prod ID="firmware_sta_for_cco_prod" TYPE="hupg" NAME="CCO工装陪测STA产品形态" SRC_NAME="hi3911_sta_demo.bin.zpk,nv_101_500.2.xml.hnv.zpk" DEV="STA" CFG_FILE="sta_hupg.ini" DESCRIPTION="" />
+	  <Prod ID="firmware_stai" TYPE="hupg" NAME="I型采集器" SRC_NAME="hi3911_sta_demo.bin.zpk,nv_105_500.xml.hnv.zpk" DEV="STA" CFG_FILE="sta_hupg.ini" DESCRIPTION="" />
+      <Prod ID="firmware_staii" TYPE="hupg" NAME="II型采集器" SRC_NAME="hi3911_sta_demo.bin.zpk,nv_111_500.xml.hnv.zpk" DEV="STA" CFG_FILE="sta_hupg.ini" DESCRIPTION="" />
+      <Prod ID="firmware_staii_prodline" TYPE="hupg" NAME="II采产线工装被检模块" SRC_NAME="hi3911_sta_demo.bin.zpk,nv_500_111.xml.hnv.zpk" DEV="STA" CFG_FILE="sta_hupg.ini" DESCRIPTION="" />
+      <Prod ID="firmware_sta_prodline" TYPE="hupg" NAME="STA产线工装被检STA模块" SRC_NAME="hi3911_sta_demo.bin.zpk,nv_500_500.xml.hnv.zpk" DEV="STA" CFG_FILE="sta_hupg.ini" DESCRIPTION="" />
+      <Prod ID="firmware_stai_prodline" TYPE="hupg" NAME="STA产线工装被检I采模块" SRC_NAME="hi3911_sta_demo.bin.zpk,nv_105_500.1.xml.hnv.zpk" DEV="STA" CFG_FILE="sta_hupg.ini" DESCRIPTION="" />
+      <Prod ID="firmware_cco_for_sta_prodline" TYPE="hupg" NAME="STA产线工装陪测CCO" SRC_NAME="hi3911_cco_demo.bin.zpk,nv_801_801.xml.hnv.zpk" DEV="CCO"  CFG_FILE="cco_hupg.ini" DESCRIPTION="" />
+      <Prod ID="firmware_cco_for_sta_prodcheck" TYPE="hupg" NAME="STA出厂工装陪测CCO" SRC_NAME="hi3911_cco_demo.bin.zpk,nv_802_802.xml.hnv.zpk" DEV="CCO" CFG_FILE="cco_hupg.ini" DESCRIPTION="" />
+      <Prod ID="firmware_cco_sta" TYPE="bupg" NAME="CCO_STA全网升级文件" SRC_NAME="demo_@VERSION_firmware_cco.hupg,demo_@VERSION_firmware_sta.hupg" DEV="CCO_STA" CFG_FILE="cco_sta_hupg.ini" DESCRIPTION="" />
+      <Prod ID="firmware_cco" TYPE="hbin" NAME="CCO产品形态" SRC_NAME="bootloader.bin,0,demo_@VERSION_firmware_cco.hupg,0xc000,0x75000" DEV="CCO" DESCRIPTION="" />
+      <Prod ID="firmware_sta" TYPE="hbin" NAME="STA产品形态" SRC_NAME="bootloader.bin,0,demo_@VERSION_firmware_sta.hupg,0xc000,0x75000" DEV="STA" DESCRIPTION="" />
+      <Prod ID="firmware_diag" TYPE="hbin" NAME="NDM产品形态" SRC_NAME="bootloader.bin,0,demo_@VERSION_firmware_diag.hupg,0xc000,0x75000" DEV="NDM" DESCRIPTION="" />
+      <Prod ID="firmware_cco_prod_diag" TYPE="hbin" NAME="抄控宝及发射机检验工装陪测CCO" SRC_NAME="bootloader.bin,0,demo_@VERSION_firmware_cco_prod_diag.hupg,0xc000,0x75000" DEV="CCO" DESCRIPTION="" />
+      <Prod ID="firmware_cco_for_staii_prod" TYPE="hbin" NAME="II采工装陪测CCO" SRC_NAME="bootloader.bin,0,demo_@VERSION_firmware_cco_for_staii_prod.hupg,0xc000,0x75000" DEV="CCO" DESCRIPTION="" />
+      <Prod ID="firmware_cco_for_sta_prodcheck" TYPE="hbin" NAME="STA出厂工装陪测CCO" SRC_NAME="bootloader.bin,0,demo_@VERSION_firmware_cco_for_sta_prodcheck.hupg,0xc000,0x75000" DEV="CCO" DESCRIPTION="" />
+      <Prod ID="firmware_cco_for_sta_prodline" TYPE="hbin" NAME="STA产线工装陪测CCO" SRC_NAME="bootloader.bin,0,demo_@VERSION_firmware_cco_for_sta_prodline.hupg,0xc000,0x75000" DEV="CCO" DESCRIPTION="" />
+      <Prod ID="firmware_diag_meter_check" TYPE="hbin" NAME="整表检测抄控器" SRC_NAME="bootloader.bin,0,demo_@VERSION_firmware_diag_meter_check.hupg,0xc000,0x75000" DEV="NDM" DESCRIPTION="" />
+      <Prod ID="firmware_sta_prodline" TYPE="hbin" NAME="STA产线工装被检STA模块烧片文件" SRC_NAME="bootloader.bin,0,demo_@VERSION_firmware_sta_prodline.hupg,0xc000,0x75000" DEV="STA" DESCRIPTION="" />
+	  <Prod ID="firmware_sta_for_cco_prod" TYPE="hbin" NAME="CCO工装陪测STA产品形态" SRC_NAME="bootloader.bin,0,demo_@VERSION_firmware_sta_for_cco_prod.hupg,0xc000,0x75000" DEV="STA" DESCRIPTION="" />
+      <Prod ID="firmware_sta_t" TYPE="hbin" NAME="三相STA" SRC_NAME="bootloader.bin,0,demo_@VERSION_firmware_sta_t.hupg,0xc000,0x75000" DEV="STA" DESCRIPTION="" />
+      <Prod ID="firmware_stai" TYPE="hbin" NAME="I型采集器" SRC_NAME="bootloader.bin,0,demo_@VERSION_firmware_stai.hupg,0xc000,0x75000" DEV="STA" DESCRIPTION="" />
+      <Prod ID="firmware_stai_prodline" TYPE="hbin" NAME="STA产线工装被检I采模块烧片文件" SRC_NAME="bootloader.bin,0,demo_@VERSION_firmware_stai_prodline.hupg,0xc000,0x75000" DEV="STA" DESCRIPTION="" />
+      <Prod ID="firmware_staii" TYPE="hbin" NAME="II型采集器" SRC_NAME="bootloader.bin,0,demo_@VERSION_firmware_staii.hupg,0xc000,0x75000" DEV="STA" DESCRIPTION="" />
+      <Prod ID="firmware_staii_prodline" TYPE="hbin" NAME="II采产线工装被检模块烧片文件" SRC_NAME="bootloader.bin,0,demo_@VERSION_firmware_staii_prodline.hupg,0xc000,0x75000" DEV="STA" DESCRIPTION="" />
+      <Prod ID="firmware_usta" TYPE="hbin" NAME="USTA产品形态" SRC_NAME="bootloader.bin,0,demo_@VERSION_firmware_usta.hupg,0xc000,0x75000" DEV="STA" DESCRIPTION="" />
+    </APP>
+  </PROJECT>
+  	    <PROJECT name="RMT">
+        <APP NAME="RMT" ID="0x1" PARAM_DEF_FILE="" MODE="HCT">
+            <Prod ID="firmware_bootloader"       TYPE="hupg"    NAME="boot产品形态"         SRC_NAME="bootloader.bin.zpk"                                                               DEV="CCO_STA_NDM" CFG_FILE="boot_hupg.ini" DESCRIPTION="" />
+            <Prod ID="firmware_rcco"              TYPE="hupg"    NAME="宽带载波汇聚局端设备"          SRC_NAME="hi3911_cco_rmt.bin.zpk,nv_501_501.xml.hnv.zpk"      DEV="CCO" CFG_FILE="cco_hupg.ini"  DESCRIPTION="" />
+            <Prod ID="firmware_rsta"              TYPE="hupg"    NAME="宽带载波汇聚终端设备"          SRC_NAME="hi3911_sta_rmt.bin.zpk,nv_601_601.xml.hnv.zpk"    DEV="STA" CFG_FILE="sta_hupg.ini" DESCRIPTION="" />
+            <!--Prod ID="firmware_cco"              TYPE="hupg"    NAME="CCO产品形态"          SRC_NAME="hi3911_cco_mdemo.bin.zpk,nv_001_001.xml.hnv.zpk"      DEV="CCO" CFG_FILE="cco_hupg.ini"  DESCRIPTION="" />
+            <Prod ID="firmware_sta"              TYPE="hupg"    NAME="STA产品形态"          SRC_NAME="hi3911_sta_mdemo.bin.zpk,nv_101_500.xml.hnv.zpk"    DEV="STA" CFG_FILE="sta_hupg.ini" DESCRIPTION="" /-->
+            <!--Prod ID="firmware_cco_sta"          TYPE="bupg"    NAME="CCO_STA全网升级文件"  SRC_NAME="temp_@VERSION_firmware_cco.hupg,temp_@VERSION_firmware_sta.hupg"                           DEV="CCO_STA" CFG_FILE="cco_sta_hupg.ini" DESCRIPTION="" /-->
+            <Prod ID="firmware_rcco"              TYPE="hbin"    NAME="宽带载波汇聚局端设备"          SRC_NAME="bootloader.bin,0,rmt_@VERSION_firmware_rcco.hupg,0xc000,0x75000"                       DEV="CCO" DESCRIPTION="" />
+            <Prod ID="firmware_rsta"              TYPE="hbin"    NAME="宽带载波汇聚终端设备"          SRC_NAME="bootloader.bin,0,rmt_@VERSION_firmware_rsta.hupg,0xc000,0x75000"                       DEV="STA" DESCRIPTION="" />
+			<Prod ID="firmware_rcco_rsta"          TYPE="bupg"    NAME="宽带载波汇聚全网升级文件"  SRC_NAME="rmt_@VERSION_firmware_rcco.hupg,rmt_@VERSION_firmware_rsta.hupg"                           DEV="CCO_STA" CFG_FILE="cco_sta_hupg.ini" DESCRIPTION="" />
+            <!--Prod ID="firmware_cco"              TYPE="hbin"    NAME="CCO产品形态"          SRC_NAME="bootloader.bin,0,temp_@VERSION_firmware_cco.hupg,0xc000,0x75000"                       DEV="CCO" DESCRIPTION="" />
+            <Prod ID="firmware_sta"              TYPE="hbin"    NAME="STA产品形态"          SRC_NAME="bootloader.bin,0,temp_@VERSION_firmware_sta.hupg,0xc000,0x75000"                       DEV="STA" DESCRIPTION="" /-->
+			<Prod ID="firmware_rdiag"             TYPE="hupg"    NAME="三代抄控器"           SRC_NAME="hi3911_ndm_rmt.bin.zpk,nv_561_561.xml.hnv.zpk"          DEV="NDM" CFG_FILE="ndm_hupg.ini" DESCRIPTION="" />
+			<Prod ID="firmware_rdiag"             TYPE="hbin"    NAME="NDM产品形态"          SRC_NAME="bootloader.bin,0,rmt_@VERSION_firmware_rdiag.hupg,0xc000,0x75000"                      DEV="NDM" DESCRIPTION="" />
+			<Prod ID="firmware_rcco_for_rsta_prodline"     TYPE="hupg"    NAME="RSTA产线工装陪测CCO"      SRC_NAME="hi3911_cco_rmt.bin.zpk,nv_803_803.xml.hnv.zpk"                                         DEV="CCO" CFG_FILE="cco_hupg.ini" DESCRIPTION="" />
+            <Prod ID="firmware_rcco_for_rsta_prodcheck"    TYPE="hupg"    NAME="RSTA出厂工装陪测CCO"  SRC_NAME="hi3911_cco_rmt.bin.zpk,nv_804_804.xml.hnv.zpk"                                         DEV="CCO" CFG_FILE="cco_hupg.ini" DESCRIPTION="" />
+			<Prod ID="firmware_rcco_for_rsta_prodcheck"    TYPE="hbin"    NAME="RSTA出厂工装陪测CCO"  SRC_NAME="bootloader.bin,0,rmt_@VERSION_firmware_rcco_for_rsta_prodcheck.hupg,0xc000,0x75000"             DEV="CCO" DESCRIPTION="" />
+            <Prod ID="firmware_rcco_for_rsta_prodline"     TYPE="hbin"    NAME="RSTA产线工装陪测CCO"          SRC_NAME="bootloader.bin,0,rmt_@VERSION_firmware_rcco_for_rsta_prodline.hupg,0xc000,0x75000"              DEV="CCO" DESCRIPTION="" />
+        </APP> 
+    </PROJECT>
+</PRODUCT>

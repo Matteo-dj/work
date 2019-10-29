@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HISTUDIO>
+  <!--Huawei Technologies Co.,Ltd.-->
+  <!--HiStudio Diag Command Plugin cnofiguration file.-->
+  <!--Shenhankun 20081020-->
+  <!--V1.0-->
+  <CMD_LINE>
+    <CMD NAME="rst" LINE="rst 0" DESCRIPTION="Rest the UE device." />
+    <CMD LINE="..\tst.bcf" DESCRIPTION="power down the UE device." />
+    <CMD NAME="ping" LINE="rst 0" DESCRIPTION="Rest the UE device." />
+    <CMD NAME="time" LINE="time" DESCRIPTION="Rest the UE device." />
+    <CMD NAME="date" LINE="date" DESCRIPTION="Rest the UE device." />
+  </CMD_LINE>
+  <DEFAULT BYTE_ENDIAN="BE">
+    <POPULAR TITLE="DCL" SHOW_DEV_ID="0" PROMPT="&gt;" FONT_NAME="Courier" FONT_SIZE="12" DRAG_BCF_AUTO_RUN="0" WORD_WRAP="0" HISTORY_CMD="1" FAVORATE_CMD="1" AUTO_LOAD_PARA="0" SHOWMATCHWIN="1" STORECMDPARA="1" DISPLAYTIMESTAMP="0" HSCROLL="0" DISPLAY_LINE_NUMBER="1000" EDIT_MAXLINE_NUMBER="0" NV_LOAD_FILE_MAX_SIZE="129023" />
+    <DEBUG_INFO POSTCMD_TIMEOUT="10000" />
+    <COLOR>
+      <GENERAL TEXT="15793151" BACKGROUND="0" />
+      <REQUEST_LINE TEXT="65535" BACKGROUND="-1" />
+      <ACTIVE_LINE TEXT="16711826" BACKGROUND="16777120" />
+      <RESPONSE_LINE TEXT="65280" BACKGROUND="0" />
+      <HILITE_LINE TEXT="32768" />
+    </COLOR>
+    <SAVE AUTO_SAVE="1" SAVE_PATH="..\logs\DiagCmd.txt" APPEND_TIME="0" />
+    <KEYBOARD SPEC_KEY="0" CTRLC="0" ESC="0" CTRLZ="1">
+      <KEY_MAP F1="112" F2="113" F3="114" F4="115" F5="116" F6="117" F7="118" F8="119" F9="120" F10="121" F11="122" F12="123" ENTER="13" ESC="27" />
+      <REPEAT_CMD NAME="F5" VALUE="116" />
+      <SEND_CMD NAME="ENTER" VALUE="13" />
+      <LIST_HISTORY_CMD NAME="F7" VALUE="118" />
+      <LIST_RECENT_CMD NAME="F3" VALUE="114" />
+      <CANCEL NAME="ESC" VALUE="27" />
+    </KEYBOARD>
+    <HELP LINE1="Enter : repeat last command" LINE2="Esc : clear up the command line" LINE3="Courier" />
+    <HISTORY_CMD />
+  </DEFAULT>
+  <SESSION ID="1">
+    <INSTANCE ID="1">
+      <DEFAULT BYTE_ENDIAN="BE">
+        <POPULAR TITLE="Console" SHOW_DEV_ID="0" PROMPT="&gt;" FONT_NAME="Courier" FONT_SIZE="12" DRAG_BCF_AUTO_RUN="0" WORD_WRAP="0" HISTORY_CMD="1" FAVORATE_CMD="1" AUTO_LOAD_PARA="0" SHOWMATCHWIN="1" STORECMDPARA="1" DISPLAYTIMESTAMP="0" HSCROLL="0" DISPLAY_LINE_NUMBER="1000" EDIT_MAXLINE_NUMBER="0" NV_LOAD_FILE_MAX_SIZE="129023" ENABLE_IND_CMD="1" ENABLE_INSTANT_IND_CMD="0" ACK_SHOW_TYPE="0" ACK_ARRAY_SHOW_ONELINE="1" ENABLE_INTELLISENSE="1" />
+        <DEBUG_INFO POSTCMD_TIMEOUT="10000" />
+        <COLOR>
+          <GENERAL TEXT="15793151" BACKGROUND="0" />
+          <REQUEST_LINE TEXT="65535" BACKGROUND="-1" />
+          <ACTIVE_LINE TEXT="16711826" BACKGROUND="16777120" />
+          <RESPONSE_LINE TEXT="65280" BACKGROUND="0" />
+          <HILITE_LINE TEXT="32768" />
+        </COLOR>
+        <SAVE AUTO_SAVE="1" SAVE_PATH=".\logs\dcl.txt" APPEND_TIME="0" />
+        <AUTOINTELLISENCE AUTO_INTELLISENSE="1"/>
+        <PLUGIN NAME="dcl_plc.dll" />
+        <KEYBOARD SPEC_KEY="0" CTRLC="0" ESC="0" CTRLZ="1">
+          <KEY_MAP F1="112" F2="113" F3="114" F4="115" F5="116" F6="117" F7="118" F8="119" F9="120" F10="121" F11="122" F12="123" ENTER="13" ESC="27" />
+          <REPEAT_CMD NAME="F5" VALUE="116" />
+          <SEND_CMD NAME="ENTER" VALUE="13" />
+          <LIST_HISTORY_CMD NAME="F7" VALUE="118" />
+          <LIST_RECENT_CMD NAME="F3" VALUE="114" />
+          <CANCEL NAME="ESC" VALUE="27" />
+        </KEYBOARD>
+        <HELP LINE1="Enter : repeat last command" LINE2="Esc : clear up the command line" LINE3="Courier" />
+        <HISTORY_CMD>
+          <CMD NAME="sof_fc" PARA="" />
+          <CMD NAME="msdu_send" PARA="" />
+          <CMD NAME="ver" PARA="" />
+          <CMD NAME="simuctl" PARA="" />
+          <CMD NAME="simuctl" PARA="{1,2,[0,0]}" />
+          <CMD NAME="rtsimu" PARA="" />
+          <CMD NAME="mrsfwchl" PARA="" />
+          <CMD NAME="mrschl" PARA="" />
+          <CMD NAME="mrsfwcnt" PARA="" />
+          <CMD NAME="mrsio" PARA="" />
+          <CMD NAME="simcco" PARA="" />
+        </HISTORY_CMD>
+        <SUPPORT_IND />
+        <SHORTCUTKEY_CMD>
+          <CMD NAME="" PARA="" />
+          <CMD NAME="" PARA="" />
+          <CMD NAME="" PARA="" />
+          <CMD NAME="" PARA="" />
+          <CMD NAME="" PARA="" />
+          <CMD NAME="" PARA="" />
+          <CMD NAME="" PARA="" />
+          <CMD NAME="" PARA="" />
+          <CMD NAME="" PARA="" />
+          <CMD NAME="" PARA="" />
+        </SHORTCUTKEY_CMD>
+      </DEFAULT>
+    </INSTANCE>
+  </SESSION>
+</HISTUDIO>
