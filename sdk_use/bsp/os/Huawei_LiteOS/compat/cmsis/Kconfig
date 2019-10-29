@@ -1,6 +1,0 @@
-config  LOSCFG_COMPAT_CMSIS
-    bool "Enable Cmsis"
-    default y
-    depends on LOSCFG_PRODUCT_IPCAMERA || LOSCFG_PRODUCT_TV
-    help
-      Answer Y to enable LiteOS support cmsis interface.

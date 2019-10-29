@@ -1,4 +1,0 @@
-#include "../../database/system/hso/base_datatype_def.txt"
-#include "../../database/system/hso/hso_hdb_common.h"
-#include "csim_interface.h"
-#include "../../database/system/diag/dfx_app.h"

@@ -1,6 +1,0 @@
-config  LOSCFG_COMPAT_POSIX
-    bool "Enable Posix"
-    default y
-    depends on LOSCFG_PRODUCT_IPCAMERA || LOSCFG_PRODUCT_TV
-    help
-      Answer Y to enable LiteOS support posix interface.

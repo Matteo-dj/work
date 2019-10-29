@@ -1,5 +1,0 @@
-#include "..\hso\base_datatype_def.txt"
-#include "..\hso\hso_hdb_common.h"
-
-#include "asl_test_stub.h"
-#include "phy_stub_interface.h"
