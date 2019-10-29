@@ -1,0 +1,11 @@
+#src file(.c) root dir
+PRIM_XML_SRC_ROOT_DIR:=$(LITEOSTOPDIR)/app/csgmrs
+#src file(.c) sub dir
+PRIM_XML_SRC_SUB_DIR:=dfx equ src
+PRIM_XML_FILE_ID_FILE:= $(PRIM_XML_SRC_ROOT_DIR)/lm_file_id.cfg
+PRIM_XML_MOD_ID_FILE:= $(PRIM_XML_SRC_ROOT_DIR)/lm_mod_id.cfg
+#key_word for avoid file(folder) name collision with other module
+PRIM_XML_KEY_WORD:=APP_CSGMRS
+
+
+

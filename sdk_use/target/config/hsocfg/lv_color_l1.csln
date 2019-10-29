@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<HISTUDIO PLUGIN="0x110(1)">
+    <!--插件ID定义：DCL:0x100; ACL:0x101,CG:0x102,LV:0x110,SG:0x111,MV:0x112,DS:0x120,NVI:0x121,MS:0x122,LCM:0x123-->
+    <!--Huawei Technologies Co.,Ltd.-->
+    <!--HiStudio Logging Viewer Plugin cnofiguration file.-->
+    <!--shenhankun 20081020-->
+    <!--V1.0-->
+    <COLOR VALID="1">
+        <GRID GRID="0xffffffff" BACKGROUND="0xffffffff" TEXT="0xffffffff" HEAD="0xffffffff" HEADTEXT="0xffffffff" HEADBORDER="0xffffffff" AIR_BK_COL="0x0" LAYER_BK_COL="0x0" VALID="1" ROW_COLOR_TITLE="0xffffffff" ROW_COLOR_ENABLE="0x0">
+            <GRID />
+        </GRID>
+        <ITEM>
+            <TITLE ID="0xa" SELECTED="0x3230">
+                <VALUE VALUE="0x5508" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x5505" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x5503" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x5502" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x5501" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0xf" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0xe" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0xd" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0xc" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0xb" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0xa" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x9" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x8" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x7" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x6" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x5" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x4" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x3" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x2" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x1" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x0" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x540c" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x540b" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x540a" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x5409" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x5408" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x5407" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x5406" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x5405" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x1f" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x1e" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x1d" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x100d" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x1c" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x1b" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x1a" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x19" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x18" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x17" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x1007" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x16" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x1006" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x15" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x14" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x1004" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x13" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x12" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x11" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x1001" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x10" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x100c" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x5309" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x5308" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x5307" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x5306" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x5305" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x5304" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x5303" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x5302" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x5301" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x5300" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x2f" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x2e" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x101d" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x2d" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x2c" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x101b" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x2b" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x2a" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x2009" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x29" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x28" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x27" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x26" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x25" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x1015" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x24" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x1014" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x23" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x2003" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x22" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x21" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x20" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x3f" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x3e" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x3d" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x3c" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x3b" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x3a" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x39" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x1028" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x38" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x1027" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x37" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x36" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x1025" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x35" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x1024" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x1023" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x2013" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x2012" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x2011" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x31" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x30" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x2014" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x2019" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x2018" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x2017" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x2015" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x201a" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x2016" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x323d" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x323a" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x3237" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x3233" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x5213" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x5212" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x3230" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x4f" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x103e" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x4e" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x103d" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x4d" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x103c" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x4c" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x4b" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x4a" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x49" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x48" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x47" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x1036" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x46" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x45" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x1034" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x44" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x43" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x1032" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x42" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x41" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x40" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x5009" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x59" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x58" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x57" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x53" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x52" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x51" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x50" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x63" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x62" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x61" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x60" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x69" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x67" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x68" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x6a" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x65" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x64" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x66" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x79" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x78" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x106b" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x1064" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x1062" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x70" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x71" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x77" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x76" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x75" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x74" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x72" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x73" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x107e" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x107d" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x107c" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x80" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x1073" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x107b" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x107a" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x2076" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x2075" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x2073" TEXT="0xffffffff" BK="0xffffffff" />
+                <VALUE VALUE="0x2072" TEXT="0xffffffff" BK="0xffffffff" />
+            </TITLE>
+            <TITLE ID="0x1" SELECTED="0x8">
+                <VALUE VALUE="0x8" TEXT="0xffffffff" BK="0xffffffff" />
+            </TITLE>
+        </ITEM>
+    </COLOR>
+</HISTUDIO>

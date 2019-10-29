@@ -1,0 +1,11 @@
+######################################################################
+# HiMDL product image files 
+######################################################################
+HiMDL_V100R001_$(PRJ_BUILD_TYPE)/image/$(PRJ_PRODUCT_IMAGE_NAME_SUFFIX)_firmware_cco.hupg
+HiMDL_V100R001_$(PRJ_BUILD_TYPE)/image/$(PRJ_PRODUCT_IMAGE_NAME_SUFFIX)_firmware_cco.hbin
+HiMDL_V100R001_$(PRJ_BUILD_TYPE)/image/$(PRJ_PRODUCT_IMAGE_NAME_SUFFIX)_firmware_sta.hupg
+HiMDL_V100R001_$(PRJ_BUILD_TYPE)/image/$(PRJ_PRODUCT_IMAGE_NAME_SUFFIX)_firmware_sta.hbin
+HiMDL_V100R001_$(PRJ_BUILD_TYPE)/image/$(PRJ_PRODUCT_IMAGE_NAME_SUFFIX)_firmware_cco_sta.hupg
+HiMDL_V100R001_$(PRJ_BUILD_TYPE)/image/$(PRJ_PRODUCT_IMAGE_NAME_SUFFIX)_firmware_staii.hbin
+HiMDL_V100R001_$(PRJ_BUILD_TYPE)/image/$(PRJ_PRODUCT_IMAGE_NAME_SUFFIX)_firmware_relay.hbin
+######################################################################

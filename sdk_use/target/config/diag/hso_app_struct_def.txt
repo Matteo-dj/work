@@ -1,0 +1,14 @@
+#define __HI_TYPES_H__
+#define HI_START_HEADER
+#define HI_END_HEADER
+#include "hi_product_config.h"
+#include "hso_hdb_common.h"
+#include "hi_mdm_types.h"
+#include "hi_config.h"
+
+#include "hi_ft_nv.h" 
+#include "dfx_app.h" 
+#include "hi_ndm.h"
+#include "hi_mdm.h"
+#include "dfx_usr.h"
+

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<HISTUDIO>
+    <!--Huawei Technologies Co.,Ltd.-->
+    <!--HiStudio Command GUI Plugin cnofiguration file.-->
+    <!--liuhuanwu 20110519-->
+    <!--V1.0-->
+    <SESSION ID="1">
+        <INSTANCE ID="1">
+            <SIMPLE POS="0">
+				<CONF CTRLNAME="UsimFeature" NV_ID="0x21e" NAME="ulUsimFeature" VALUE="0" />
+                <CONF CTRLNAME="ImsiValue" NV_ID="0x25b" NAME="aucImsi.aucImsi" VALUE="123456789012345" />
+                <CONF CTRLNAME="DeviceType" NV_ID="0x1b" NAME="ulUeDeviceType" VALUE="1:Drive Test UE,2:Test UE,4:Commercial UE" />
+                <CONF CTRLNAME="SupportBand" NV_ID="0x22d" NAME="usBandIndCount" VALUE="3:BAND3,7:BAND7,20:BAND20,38:BAND38,40:BAND40,41:BAND41,64:BAND64" />
+                <CONF CTRLNAME="DefaultBand" NV_ID="0x22d" NAME="aucSupportBandID.aucSupportBandID" VALUE="7:BAND7" />
+                <CONF CTRLNAME="SoftBank" NV_ID="0x275" NAME="stPsFunFlag01.bitFlag01_0_0" VALUE="1:Open,0:Close"/>
+                <CONF CTRLNAME="LockInd" NV_ID="0x232" NAME="enLockInd" VALUE="0:Lock None,1:Lock band,2:Lock freq,3:Lock cell" />
+				<CONF CTRLNAME="CellId" NV_ID="0x232" NAME="usCellId" VALUE="0" />
+				<CONF CTRLNAME="Freq" NV_ID="0x232" NAME="usFreqPoint" VALUE="0" />
+				<CONF CTRLNAME="BandInd" NV_ID="0x232" NAME="ucBandInd" VALUE="0" />
+				<CONF CTRLNAME="FreqBegin" NV_ID="0x232" NAME="stLockedBand.usFreqBegin" VALUE="0"  />
+				<CONF CTRLNAME="FreqEnd" NV_ID="0x232" NAME="stLockedBand.usFreqEnd" VALUE="0" />
+                <CONF CTRLNAME="UsimAlg" NV_ID="0x25d" NAME="stSoftUsimAuthParam.enSoftUsimAlg" VALUE="0:Millenge Arithmetic,1:Test Arithmetic" />
+				<CONF CTRLNAME="UeCapabilityCnt" NV_ID="0x22c" NAME="stRfPara.usCnt" VALUE="0"/>
+				<CONF CTRLNAME="UeCapabilityBandList" NV_ID="0x22c" NAME="stRfPara.astSuppEutraBandList.astSuppEutraBandList.ucEutraBand" VALUE="0" />
+            </SIMPLE>
+            <MULTIPLE POS="0">
+                <CONF CTRLNAME="Key" NV_ID="0x25d" NAME="stSoftUsimAuthParam.aucKey.aucKey" VALUE="[0x46,0x5b,0x5c,0xe8,0xb1,0x99,0xb4,0x9e,0xaa,0x5e,0xa,0x2e,0xe2,0x38,0xa6,0xbc]" />
+                <CONF CTRLNAME="Op" NV_ID="0x25d" NAME="stSoftUsimAuthParam.aucOp.aucOp" VALUE="[0xcd,0xc2,0x2,0xd5,0x12,0x3e,0x20,0xe6,0x2b,0x6d,0x67,0x6a,0xc7,0x2c,0xb3,0x18]" />
+            </MULTIPLE>
+            <MULTIPLE POS="1">
+                <CONF CTRLNAME="Key" NV_ID="0x25d" NAME="stSoftUsimAuthParam.aucKey.aucKey" VALUE="[0x47,0x5a,0x5b,0x11,0x52,0x89,0x74,0x9e,0xaa,0x5e,0xa5,0x20,0xe2,0x38,0xa6,0xbc]" />
+                <CONF CTRLNAME="Op" NV_ID="0x25d" NAME="stSoftUsimAuthParam.aucOp.aucOp" VALUE="[0xc7,0x55,0x2,0xd5,0x78,0x3e,0x20,0xe6,0x2b,0x78,0x67,0x63,0xc7,0x5,0xb3,0x63]" />
+            </MULTIPLE>
+        </INSTANCE>
+    </SESSION>
+</HISTUDIO>

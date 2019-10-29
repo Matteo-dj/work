@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HISTUDIO>
+  <!--Huawei Technologies Co.,Ltd.-->
+  <!--HiStudio Memory Stat. Plugin cnofiguration file.-->
+  <!--shenhankun 20081020-->
+  <!--V1.0-->
+  <CCO TEI="0" TIME="0:6:80" MAC="00:00:00:00:B0:C0">
+    <STA NAME="" MAC="00:00:F0:A1:B0:C0" TEI="1" TIME="0:0:1">
+      <STA NAME="" MAC="00:00:F0:A1:B1:C0" TEI="2" TIME="0:0:6">
+        <STA NAME="" MAC="00:00:F0:A1:B1:C1" TEI="3" TIME="0:1:1"></STA>
+        <STA NAME="" MAC="00:00:F0:A1:B1:C2" TEI="3" TIME="0:0:10"></STA>
+        <STA NAME="" MAC="00:00:F0:A1:B1:C3" TIME="0:0:11" TEI="30"></STA>
+        <STA NAME="" MAC="00:00:F0:A1:B1:C4" TEI="31" TIME="0:0:12"></STA>
+      </STA>
+    </STA>
+    <STA NAME="" MAC="00:00:F0:A2:B0:C0" TEI="5" TIME="0:2:1">
+      <STA NAME="" MAC="00:00:F0:A2:B1:C0" TEI="6" TIME="0:2:8"></STA>
+      <STA NAME="" MAC="00:00:F0:A2:B2:C0" TEI="7" TIME="0:2:9">
+        <STA NAME="" MAC="00:00:F0:A2:B2:C1" TEI="8" TIME="0:3:1">
+          <STA NAME="" MAC="00:00:F0:A2:B2:C2" TEI="9" TIME="0:3:50"></STA>
+          <STA NAME="" MAC="00:00:F0:A2:B2:C3" TEI="10" TIME="0:4:60"></STA>
+          <STA NAME="" MAC="00:00:F0:A2:B2:C4" TEI="11" TIME="0:4:70"></STA>
+          <STA NAME="" MAC="00:00:F0:A2:B2:C5" TEI="12" TIME="0:5:70"></STA>
+          <STA NAME="" MAC="00:00:F0:A2:B2:C6" TEI="13" TIME="0:5:80"></STA>
+          <STA NAME="" MAC="00:00:F0:A2:B2:C7" TEI="14" TIME="0:6:80"></STA>
+        </STA>
+        <TEI>12</TEI>
+      </STA>
+    </STA>
+    <STA NAME="" MAC="00:00:F0:A2:B0:C1" TEI="6" TIME="0:2:40"></STA>
+  </CCO>
+</HISTUDIO>

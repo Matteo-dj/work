@@ -1,0 +1,69 @@
+#include "cts_cfg_interface.h"
+
+//@0 表示用例的序号为0
+// cts_HI_MDM_Crc 0
+// 本地查询
+//
+HI_MDM_CRC_PARAM_S
+{
+0
+};
+
+//@1 表示用例的序号为1
+// cts_HI_MDM_Crc 1
+// 本地查询
+//
+HI_MDM_CRC_PARAM_S
+{
+1
+};
+
+//@2 表示用例的序号为2
+// cts_HI_MDM_Crc 2
+// 本地查询
+//
+HI_MDM_CRC_PARAM_S
+{
+2
+};
+
+//@3 表示用例的序号为3
+// cts_HI_MDM_Crc 3
+// 本地查询
+//
+HI_MDM_CRC_PARAM_S
+{
+3
+};
+//@4 表示用例的序号为4
+// cts_HI_MDM_Crc 4
+// 本地查询
+//
+HI_MDM_CRC_PARAM_S
+{
+4
+};
+//@5 表示用例的序号为5
+// cts_HI_MDM_Crc 5
+// 本地查询
+//
+HI_MDM_CRC_PARAM_S
+{
+5
+};
+//@6 表示用例的序号为6
+// cts_HI_MDM_Crc 6
+// 本地查询
+//
+HI_MDM_CRC_PARAM_S
+{
+6
+};
+//@7 表示用例的序号为7
+// cts_HI_MDM_Crc 7
+// 本地查询
+//
+HI_MDM_CRC_PARAM_S
+{
+7
+};

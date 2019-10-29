@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HISTUDIO>
+  <!--Huawei Technologies Co.,Ltd.-->
+  <!--HiStudio Memory Stat. Plugin cnofiguration file.-->
+  <!--shenhankun 20081020-->
+  <!--V1.0-->
+  <SESSION>
+    <ID>0x001</ID>
+    <INSTANCE>
+      <ID>0x400</ID>
+      <DEFAULT>
+        <WINDOW>
+          <TITLE>NDE</TITLE>
+        </WINDOW>
+        <STYLE>
+          <FONT>
+            <NAME>Courier</NAME>
+            <SIZE>10</SIZE>
+          </FONT>
+        </STYLE>
+      </DEFAULT>
+    </INSTANCE>
+    <INSTANCE>
+      <ID>0x401</ID>
+      <DEFAULT>
+        <WINDOW>
+          <TITLE>NDE</TITLE>
+        </WINDOW>
+        <STYLE>
+          <FONT>
+            <NAME>Courier</NAME>
+            <SIZE>10</SIZE>
+          </FONT>
+        </STYLE>
+      </DEFAULT>
+    </INSTANCE>
+  </SESSION>
+</HISTUDIO>

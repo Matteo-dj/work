@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<HISTUDIO>
+    <!--Huawei Technologies Co.,Ltd.-->
+    <!--HiStudio MSIM Plugin cnofiguration file.-->
+    <!--shenhankun 20081020-->
+    <!--V1.0-->
+    <DEFAULT>
+        <METER_DB>
+            <GROUP NAME="DB2007">
+                <FILE NAME="Meter\MD2007\00.电能表.csv" />
+                <FILE NAME="Meter\MD2007\01.最大需量及发生时间.csv" />
+                <FILE NAME="Meter\MD2007\02.变量.csv" />
+                <FILE NAME="Meter\MD2007\04.参变量.csv" />
+                <FILE NAME="Meter\MD2007\03.事件记录.csv" />
+                <FILE NAME="Meter\MD2007\05.冻结.csv" />
+                <FILE NAME="Meter\MD2007\06.负荷.csv" />
+            </GROUP>
+            <GROUP NAME="DB1997">
+                <FILE NAME="Meter\MD997\00.电能表.csv" />
+                <FILE NAME="Meter\MD1997\01.最大需量及发生时间.csv" />
+                <FILE NAME="Meter\MD1997\02.变量.csv" />
+                <FILE NAME="Meter\MD1997\04.参变量.csv" />
+                <FILE NAME="Meter\MD1997\03.事件记录.csv" />
+                <FILE NAME="Meter\MD1997\05.冻结.csv" />
+                <FILE NAME="Meter\MD1997\06.负荷.csv" />
+            </GROUP>
+        </METER_DB>
+    </DEFAULT>
+    <SESSION ID="1">
+        <INSTANCE ID="1">
+            <METER_CONF>
+                <METER ADDR="000000000041" DELAY="500" TYPE="2007" START="是">
+                    <PARAM ID="0040000C" DATA="" />
+                    <PARAM ID="0095000C" DATA="" />
+                    <PARAM ID="0009040C" DATA="" />
+                    <PARAM ID="00410001" DATA="" />
+                    <PARAM ID="00300001" DATA="" />
+                    <PARAM ID="00960001" DATA="" />
+                    <PARAM ID="00850001" DATA="" />
+                    <PARAM ID="00C00000" DATA="" />
+                    <PARAM ID="00420000" DATA="" />
+                    <PARAM ID="00310000" DATA="" />
+                </METER>
+                <METER ADDR="000000006334" DELAY="500" TYPE="2007" START="是" />
+                <METER ADDR="000000018467" DELAY="500" TYPE="2007" START="是" />
+                <METER ADDR="000000000001" DELAY="50" TYPE="2007" START="是">
+                    <PARAM ID="00000100" DATA="100" />
+                    <PARAM ID="00000200" DATA="20" />
+                    <PARAM ID="0009040C" DATA="" />
+                    <PARAM ID="00410001" DATA="" />
+                    <PARAM ID="00320001" DATA="" />
+                </METER>
+                <METER ADDR="000000026500" DELAY="500" TYPE="2007" START="是">
+                    <PARAM ID="0040000C" DATA="" />
+                    <PARAM ID="0095000C" DATA="" />
+                    <PARAM ID="0009040C" DATA="" />
+                    <PARAM ID="00410001" DATA="" />
+                    <PARAM ID="00300001" DATA="" />
+                    <PARAM ID="00960001" DATA="" />
+                    <PARAM ID="00850001" DATA="" />
+                    <PARAM ID="00C00000" DATA="" />
+                </METER>
+                <METER ADDR="000000011478" DELAY="500" TYPE="2007" START="是" />
+                <METER ADDR="000000015724" DELAY="500" TYPE="2007" START="是">
+                    <PARAM ID="0040000C" DATA="" />
+                    <PARAM ID="0095000C" DATA="" />
+                    <PARAM ID="0009040C" DATA="" />
+                    <PARAM ID="00410001" DATA="" />
+                    <PARAM ID="00300001" DATA="" />
+                    <PARAM ID="00960001" DATA="" />
+                    <PARAM ID="00850001" DATA="" />
+                    <PARAM ID="00C00000" DATA="" />
+                </METER>
+            </METER_CONF>
+        </INSTANCE>
+    </SESSION>
+</HISTUDIO>

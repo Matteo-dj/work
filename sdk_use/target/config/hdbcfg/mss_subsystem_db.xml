@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Huawei Technologies Co.,Ltd.-->
+<!--shenhankun 00130424 - 20090811-->
+<MSS>
+  <!--MSS基本ID的定义,包括Category ID, Module ID和名称。子系统之间的Category/Module ID必须唯一-->
+  <SUBSYSTEM>
+    <CATEGORY>
+      <CAT NAME="System" ID="0x00000400" DESCRIPTION="系统" />
+      <CAT NAME="Print" ID="0x00008000" DESCRIPTION="打印类别" />
+      <CAT NAME="Event" ID="0x00004000" DESCRIPTION="事件日志" />
+      <CAT NAME="Air" ID="0x00002000" DESCRIPTION="空口消息" />
+      <CAT NAME="Layer" ID="0x00001000" DESCRIPTION="层间消息" />
+      <CAT NAME="User Plane" ID="0x00000200" DESCRIPTION="UserPlane消息" />
+      <CAT NAME="Message" ID="0x00000100" DESCRIPTION="自定义消息100" />
+      <CAT NAME="自定义诊断消息" ID="0x00000010" DESCRIPTION="自定义诊断消息" />
+      <CAT NAME="LTE L1 Message" ID="0x00000008" DESCRIPTION="L1 Message消息08" />
+    </CATEGORY>
+    <TITLE>
+      <ITEM ID="0x00" NAME="NO." STAT="1" VALUE="0" DESCRIPTION="..." />
+      <ITEM ID="0x01" NAME="Category" STAT="0" DESCRIPTION="..." />
+      <ITEM ID="0x02" STAT="0" NAME="Level" DESCRIPTION="..." />
+      <ITEM ID="0x03" STAT="1" NAME="Date" DESCRIPTION="..." />
+      <ITEM ID="0x04" NAME="Time" STAT="1" DESCRIPTION="..." />
+      <ITEM ID="0x05" NAME="TimeStamp" STAT="1" DESCRIPTION="..." />
+      <ITEM ID="0x06" NAME="Chip" STAT="0" DESCRIPTION="..." />
+      <ITEM ID="0x07" NAME="Cpu" STAT="0" DESCRIPTION="..." />
+      <ITEM ID="0x08" NAME="Side" STAT="0" DESCRIPTION="..." />
+      <ITEM ID="0x09" NAME="Layer" STAT="0" DESCRIPTION="..." />
+      <ITEM ID="0x0A" NAME="Prim" STAT="0" DESCRIPTION="..." />
+      <ITEM ID="0x0B" NAME="Source" STAT="0" DESCRIPTION="..." />
+      <ITEM ID="0x0C" NAME="Destination" STAT="0" DESCRIPTION="..." />
+      <ITEM ID="0x0D" NAME="FileName" STAT="0" DESCRIPTION="..." />
+      <ITEM ID="0x0E" NAME="LineNo" STAT="0" DESCRIPTION="..." />
+      <ITEM ID="0x0F" NAME="Data" STAT="0" DESCRIPTION="..." />
+    </TITLE>
+    <LEVEL>
+      <PRINT ICON="\logging_item_type_icon.png">
+        <LEVEL NAME="Error" ID="0x40000000" ICON_OFFSET="0x1" DESCRIPTION="错误" />
+        <LEVEL NAME="Warning" ID="0x20000000" ICON_OFFSET="0x0" DESCRIPTION="警告" />
+        <LEVEL ID="0x10000000" NAME="Info" ICON_OFFSET="0x2" DESCRIPTION="信息" />
+        <LEVEL ID="0x08000000" NAME="Normal" ICON_OFFSET="0x4" DESCRIPTION="正常" />
+      </PRINT>
+    </LEVEL>
+    <MODULES RANGE="0x001,0xFFFF">
+      <!--added by shenhankun 00130424 - 20120823 -->
+      <MOD ID="200" NAME="SAL" DESCRIPTION="SAL" />
+      <MOD ID="210" NAME="SAL_SYS" DESCRIPTION="SAL_SYS" />
+      <MOD ID="211" NAME="SAL_DMS" DESCRIPTION="SAL_DMS" />
+      <MOD ID="212" NAME="SAL_NVM" DESCRIPTION="SAL_NVM" />
+      <MOD ID="213" NAME="SAL_DIAG" DESCRIPTION="SAL_DIAG" />
+      <MOD ID="214" NAME="SAL_DFX" DESCRIPTION="SAL_DFX" />
+      <MOD ID="300" NAME="DRV" DESCRIPTION="DRV" />
+      <MOD ID="301" NAME="DRV_FLASH" DESCRIPTION="DRV_FLASH" />
+      <MOD ID="302" NAME="DRV_SERIAL" DESCRIPTION="DRV_SERIAL" />
+      <MOD ID="303" NAME="DRV_ETH" DESCRIPTION="DRV_ETH" />
+      <MOD ID="304" NAME="DRV_HRTIMER" DESCRIPTION="DRV_HRTIMER" />
+      <MOD ID="305" NAME="DRV_UPG" DESCRIPTION="DRV_UPG" />
+      <MOD ID="306" NAME="DRV_DFX" DESCRIPTION="DRV_DFX" />
+      <MOD ID="307" NAME="DRV_SPI" DESCRIPTION="DRV_SPI" />
+      <MOD ID="308" NAME="DRV_POWER_SAVE" DESCRIPTION="DRV_POWER_SAVE" />
+      <MOD ID="309" NAME="DRV_CRC" DESCRIPTION="DRV_CRC" />
+      <MOD ID="310" NAME="DRV_GPIO" DESCRIPTION="DRV_GPIO" />
+      <MOD ID="311" NAME="DRV_CIPHER" DESCRIPTION="DRV_CIPHER" />
+      <MOD ID="312" NAME="DRV_WDG" DESCRIPTION="DRV_WDG" />
+      <MOD ID="313" NAME="DRV_LED" DESCRIPTION="DRV_LED" />
+      <MOD ID="314" NAME="DRV_IR" DESCRIPTION="DRV_IR" />
+      <MOD ID="315" NAME="DRV_I2C" DESCRIPTION="DRDRV_I2CV_IR" />
+      <MOD ID="316" NAME="DRV_DMA" DESCRIPTION="DRV_DMA" />
+      <MOD ID="500" NAME="MAC" DESCRIPTION="MAC" />
+      <MOD ID="501" NAME="汇聚器" DESCRIPTION="汇聚器" />
+      <MOD ID="502" NAME="分段器" DESCRIPTION="分段器" />
+      <MOD ID="503" NAME="发送机" DESCRIPTION="发送机" />
+      <MOD ID="504" NAME="RTS_CTS" DESCRIPTION="RTS_CTS" />
+      <MOD ID="505" NAME="SACK" DESCRIPTION="SACK" />
+      <MOD ID="506" NAME="接收机" DESCRIPTION="接收机" />
+      <MOD ID="507" NAME="重组器" DESCRIPTION="重组器" />
+      <MOD ID="508" NAME="路由" DESCRIPTION="路由" />
+      <MOD ID="509" NAME="信道估计" DESCRIPTION="信道估计" />
+      <MOD ID="510" NAME="信标" DESCRIPTION="信标" />
+      <MOD ID="511" NAME="MAC可维可测" DESCRIPTION="MAC可维可测" />
+      <MOD ID="512" NAME="网络关联" DESCRIPTION="网络关联" />
+      <MOD ID="513" NAME="网络协调" DESCRIPTION="网络协调" />
+      <MOD ID="514" NAME="网络密钥" DESCRIPTION="网络密钥"></MOD>
+      <MOD ID="515" NAME="网络TDMA" DESCRIPTION="网络TDMA" />
+      <MOD ID="516" NAME="网络拓扑" DESCRIPTION="网络拓扑" />
+      <MOD ID="517" NAME="PHY驱动" DESCRIPTION="PHY驱动" />
+      <MOD ID="518" NAME="时钟同步" DESCRIPTION="时钟同步" />
+      <MOD ID="519" NAME="信道参数" DESCRIPTION="信道参数" />
+      <MOD ID="520" NAME="NDC" DESCRIPTION="NDC" />
+      <MOD ID="521" NAME="MAC_FA" DESCRIPTION="MAC_FA" />
+      <MOD ID="522" NAME="交换" DESCRIPTION="交换" />
+      <MOD ID="523" NAME="PTPC" DESCRIPTION="点对点通信" />
+      <MOD ID="524" NAME="EMC" DESCRIPTION="EMC" />
+      <MOD ID="525" NAME="单载波接收" DESCRIPTION="单载波接收机" />
+      <MOD ID="526" NAME="单载波发送" DESCRIPTION="单载波发送机" />
+      <MOD ID="527" NAME="单载波关联" DESCRIPTION="单载波关联" />
+      <MOD ID="528" NAME="子网拓扑" DESCRIPTION="子网拓扑" />
+      <MOD ID="529" NAME="子网TDMA" DESCRIPTION="子网时隙调度" />
+      <MOD ID="800" NAME="APP" DESCRIPTION="APP" />
+      <MOD ID="801" NAME="通道接收" DESCRIPTION="通道接收" />
+      <MOD ID="802" NAME="通道发送" DESCRIPTION="通道发送" />
+      <MOD ID="803" NAME="规约解析" DESCRIPTION="规约解析" />
+      <MOD ID="804" NAME="会话" DESCRIPTION="会话" />
+      <MOD ID="805" NAME="MacList" DESCRIPTION="MAC_LIST" />
+      <MOD ID="806" NAME="映射表" DESCRIPTION="映射表" />
+      <MOD ID="807" NAME="随抄读表" DESCRIPTION="随抄读表" />
+      <MOD ID="808" NAME="定抄读表" DESCRIPTION="定抄读表" />
+      <MOD ID="809" NAME="搜表" DESCRIPTION="搜表" />
+      <MOD ID="810" NAME="升级" DESCRIPTION="升级" />
+      <MOD ID="811" NAME="读表队列" DESCRIPTION="读表队列" />
+      <MOD ID="812" NAME="公共服务" DESCRIPTION="公共服务" />
+	  <MOD ID="1000" NAME="用户Log1" DESCRIPTION="用户Log1" />
+      <MOD ID="1001" NAME="用户Log2" DESCRIPTION="用户Log2" />
+      <MOD ID="1002" NAME="用户Log3" DESCRIPTION="用户Log3" />
+      <MOD ID="1003" NAME="用户Log4" DESCRIPTION="用户Log4" />
+      <MOD ID="1004" NAME="用户Log5" DESCRIPTION="用户Log5" />
+      <MOD ID="0x0000fffe" DESCRIPTION="UE_MODULE_IP_ID" NAME="Dump关键消息" ISLEAF="0" ISSHOW="1" STATE="2"></MOD>
+    </MODULES>
+  </SUBSYSTEM>
+</MSS>
